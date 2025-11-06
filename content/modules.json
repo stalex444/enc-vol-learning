@@ -1,0 +1,139 @@
+{
+  "modules": [
+    {
+      "id": "01-foundation",
+      "title": "Foundation & Sacred Responsibility",
+      "description": "Understanding the depth of this work and your role within it",
+      "estimatedTime": "45 min",
+      "color": "from-primary-400 to-primary-600",
+      "chapters": [
+        {
+          "id": "01",
+          "title": "The Sacred Nature of Service",
+          "estimatedTime": "12 min"
+        },
+        {
+          "id": "02",
+          "title": "Volunteer Agreements & Code of Conduct",
+          "estimatedTime": "15 min"
+        },
+        {
+          "id": "04",
+          "title": "Practical Preparation & Essentials",
+          "estimatedTime": "10 min"
+        }
+      ]
+    },
+    {
+      "id": "02-communication",
+      "title": "Communication & Support Protocols",
+      "description": "Who to call, when to call, and how to request assistance with clarity",
+      "estimatedTime": "60 min",
+      "color": "from-primary-500 to-primary-700",
+      "chapters": [
+        {
+          "id": "01",
+          "title": "Three Types of Support: Medical, Emotional, Meditation",
+          "estimatedTime": "12 min"
+        },
+        {
+          "id": "02",
+          "title": "How to Request Medical Assistance",
+          "estimatedTime": "14 min"
+        },
+        {
+          "id": "03",
+          "title": "When to Call Emotional Support",
+          "estimatedTime": "13 min"
+        },
+        {
+          "id": "04",
+          "title": "Meditation Assistance & Moving Energy",
+          "estimatedTime": "11 min"
+        }
+      ]
+    },
+    {
+      "id": "03-roles",
+      "title": "Roles & Responsibilities",
+      "description": "Understanding all volunteer roles and how they interconnect",
+      "estimatedTime": "43 min",
+      "color": "from-sacred-sage to-primary-500",
+      "chapters": [
+        {
+          "id": "01",
+          "title": "Week Long Roles Overview",
+          "estimatedTime": "14 min"
+        },
+        {
+          "id": "02",
+          "title": "Registration Day Roles",
+          "estimatedTime": "13 min"
+        },
+        {
+          "id": "03",
+          "title": "Additional Duties & Special Roles",
+          "estimatedTime": "16 min"
+        }
+      ]
+    },
+    {
+      "id": "04-critical-protocols",
+      "title": "Critical Protocols",
+      "description": "Life-saving protocols for seizures and gravity chair management",
+      "estimatedTime": "30 min",
+      "color": "from-sacred-violet to-primary-600",
+      "chapters": [
+        {
+          "id": "01",
+          "title": "Recognizing & Responding to Seizures",
+          "estimatedTime": "15 min"
+        },
+        {
+          "id": "02",
+          "title": "The Gravity Chair Protocol",
+          "estimatedTime": "15 min"
+        }
+      ]
+    },
+    {
+      "id": "appendix",
+      "title": "Appendix: Quick Reference Materials",
+      "description": "Essential cheat sheets and protocols for quick reference during events",
+      "estimatedTime": "Quick Reference",
+      "color": "from-slate-400 to-slate-600",
+      "chapters": [
+        {
+          "id": "01",
+          "title": "Group Lead Cheat Sheet",
+          "estimatedTime": "Quick Reference"
+        },
+        {
+          "id": "02",
+          "title": "Breath Contraindications Letter",
+          "estimatedTime": "Quick Reference"
+        },
+        {
+          "id": "03",
+          "title": "Telegram Quick Reference",
+          "estimatedTime": "Quick Reference"
+        },
+        {
+          "id": "04",
+          "title": "Gravity Chair Quick Reference",
+          "estimatedTime": "Quick Reference"
+        },
+        {
+          "id": "05",
+          "title": "Medical Request Quick Guide",
+          "estimatedTime": "Quick Reference"
+        },
+        {
+          "id": "06",
+          "title": "Code of Conduct Quick Reference",
+          "estimatedTime": "Quick Reference"
+        }
+      ]
+    }
+  ]
+}

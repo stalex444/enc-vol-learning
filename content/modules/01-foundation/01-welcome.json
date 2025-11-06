@@ -1,0 +1,114 @@
+{
+  "id": "01-welcome",
+  "moduleId": "01-foundation",
+  "title": "Welcome to Your Sacred Role",
+  "estimatedTime": "15 min",
+  "phase1_prime": {
+    "breathing": "Before we begin, let's create coherence. Place your hand on your heart. Take three slow, deep breaths—breathing in for 6 seconds, and out for 6 seconds. Feel yourself becoming present to this moment, to this sacred responsibility you're stepping into.",
+    "story": "At a recent Advanced Week in Cancun, a first-time volunteer named Maria stood frozen in the hallway. A participant had just collapsed in tears after a profound meditation. Maria's training kicked in—but more than that, her presence did.\n\nShe didn't rush to fix. She didn't panic. She simply sat beside them, placed a gentle hand on their shoulder, and breathed. After a few minutes, the participant looked up with tears of gratitude: 'Thank you for just being here. For not making me wrong for feeling this.'\n\nThat's the essence of what we do. We hold space for transformation.",
+    "whyThisMatters": "You are not here by accident. You've been called to serve in one of the most sacred roles imaginable—holding space for people as they literally rewire their brains and transform their lives. Dr. Joe often says, 'When you change your energy, you change your life. When you change your life, you change the world.' As crew, you are the guardians of that possibility. Your presence, your calm, your compassion—these create the field in which miracles happen.",
+    "learningObjectives": [
+      "Understand the sacred nature of your role as crew",
+      "Recognize that presence is your greatest gift",
+      "Learn the difference between fixing and holding space",
+      "Embody the principles of conscious service"
+    ]
+  },
+  "phase2_immerse": {
+    "content": [
+      {
+        "type": "text",
+        "title": "What is Encephalon?",
+        "content": "Encephalon is more than an event—it's a transformational crucible where people come to heal, grow, and connect with their highest potential. Participants invest thousands of dollars and travel from around the world to be here. They come carrying trauma, hope, desperation, and dreams. As crew, you are the invisible architects of their experience."
+      },
+      {
+        "type": "callout",
+        "variant": "sacred",
+        "title": "Sacred Principle",
+        "content": "You are not here to fix anyone. You are here to hold space for their own healing journey. There is profound wisdom in this distinction."
+      },
+      {
+        "type": "list",
+        "title": "Your Core Responsibilities",
+        "content": [
+          "Hold space for transformation with unwavering presence and compassion",
+          "Ensure the physical and emotional safety of all participants",
+          "Support the flow of the event while remaining invisible when needed",
+          "Embody the principles Dr. Joe teaches—be the living example",
+          "Respond to emergencies with calm, trained competence",
+          "Maintain confidentiality and sacred trust"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "The Field of Possibility",
+        "content": "Dr. Joe's work is based on the science of neuroplasticity and epigenetics. When participants enter deep meditative states, they're literally changing their brain chemistry and gene expression. Your role is to protect that process. Every interaction you have—every smile, every calm response, every moment of presence—contributes to the coherent field that allows transformation to occur."
+      }
+    ],
+    "pullQuotes": [
+      "The moment you start feeling, you start healing. — Dr. Joe Dispenza",
+      "When a community comes together with a common intention, the field becomes coherent.",
+      "You are the placebo. You are the quantum field. You are pure consciousness."
+    ]
+  },
+  "phase3_integrate": {
+    "reflections": [
+      "Think about a time when someone's presence made you feel truly safe and held. What qualities did they embody?",
+      "How can you bring those qualities to your role as crew?",
+      "What does 'holding space' mean to you personally?",
+      "How might your own healing journey inform your service to others?"
+    ],
+    "quiz": {
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What is the primary role of an Encephalon crew member?",
+          "options": [
+            { "id": "a", "text": "To fix participants' problems and guide their healing" },
+            { "id": "b", "text": "To hold space for transformation with presence and compassion" },
+            { "id": "c", "text": "To ensure everyone follows the rules strictly" },
+            { "id": "d", "text": "To be visible and actively involved in all participant experiences" }
+          ],
+          "correctAnswer": "b",
+          "thoughtfulFeedback": {
+            "correct": "Exactly. You've grasped the essence of this work. Holding space means being fully present without attachment to outcome. It means trusting that each person has their own inner healer, and your job is to create the conditions for that healer to emerge.",
+            "incorrect": "Consider this: The most powerful thing you can do is often the hardest—to simply be present without trying to fix, change, or direct someone's experience. Dr. Joe teaches that healing comes from within. Our role is to hold space for that emergence, not to orchestrate it.",
+            "deeperInsight": "Dr. Joe often reminds us: 'The best way to predict your future is to create it—not from the known, but from the unknown.' As crew, we hold space for people to step into their unknown, their possibility. That requires us to release our need to control or fix, and instead trust the process."
+          }
+        },
+        {
+          "id": "q2",
+          "question": "A participant approaches you in tears, overwhelmed by emotions that came up during meditation. What's your best first response?",
+          "options": [
+            { "id": "a", "text": "Immediately try to calm them down and stop their crying" },
+            { "id": "b", "text": "Take them to a quiet space, sit with them, and simply be present" },
+            { "id": "c", "text": "Tell them it's all part of the process and they'll be fine" },
+            { "id": "d", "text": "Find a meditation coach immediately" }
+          ],
+          "correctAnswer": "b",
+          "thoughtfulFeedback": {
+            "correct": "Beautiful. You understand that emotions need to move through us, not be suppressed. By taking them to a quiet space and being present, you're giving them permission to feel fully—which is where the healing happens. You can assess if they need additional support once they've had space to process.",
+            "incorrect": "Remember: 'The moment you start feeling, you start healing.' Emotions aren't problems to be solved—they're energy in motion that needs to be felt and released. Your presence and calm create safety for that process. Taking them to a quiet space and simply being with them honors their experience without trying to fix it.",
+            "deeperInsight": "Dr. Joe teaches that we store emotions in our bodies as energy. When they surface during meditation, it's actually a sign of healing—the body is releasing what it's been holding. As crew, we create the safe container for that release. Your calm presence tells their nervous system: 'It's safe to feel this. You're not alone.'"
+          }
+        }
+      ],
+      "passingScore": 85,
+      "isCritical": false,
+      "retakeAllowed": true,
+      "feedbackStyle": "thoughtful"
+    }
+  },
+  "phase4_anchor": {
+    "summary": [
+      "Your presence is your greatest gift—not your ability to fix or solve",
+      "Encephalon crew hold space for transformation, creating the field for healing",
+      "You are the living embodiment of the principles Dr. Joe teaches",
+      "Every interaction matters and contributes to the coherent field",
+      "Holding space means being present without attachment to outcome"
+    ],
+    "embodimentPractice": "For the next 24 hours, practice 'holding space' in your daily life. When someone shares a problem or emotion with you, resist the urge to fix or advise. Instead, simply be present. Breathe. Listen. Notice what happens when you create space instead of filling it.",
+    "nextSteps": "In the next chapter, we'll explore the deeper meaning of 'sacred responsibility' and the specific agreements we make as crew members. You'll learn the protocols that keep everyone safe and the principles that guide our service.",
+    "reflectionPrompt": "Close your eyes for a moment. Place your hand on your heart. Ask yourself: 'What called me to this service?' Listen for the answer. This is your 'why'—and it will sustain you through the long days and challenging moments ahead."
+  }
+}

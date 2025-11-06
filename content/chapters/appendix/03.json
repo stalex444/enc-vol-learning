@@ -1,0 +1,50 @@
+{
+  "id": "03",
+  "moduleId": "appendix",
+  "title": "Telegram Quick Reference",
+  "type": "reference",
+  "estimatedTime": "Quick Reference",
+  
+  "content": {
+    "sections": [
+      {
+        "title": "Medical Emergency Post Format",
+        "format": "🚨🚨 MEDICAL EMERGENCY\n• Participant: [Full Name]\n• Issue: [Brief description]\n• Location: [Section, Row, Seat]\n• Started: [Time]\n• I am with them",
+        "example": "🚨🚨 MEDICAL EMERGENCY\n• Participant: Sarah Chen\n• Issue: Seizure in progress\n• Location: Blue section, Row 12, Seat 7\n• Started: 2:43 PM\n• I am with them"
+      },
+      {
+        "title": "Room Reset Confirmation Format",
+        "steps": [
+          "After depositing: '[Color] deposited [#]'",
+          "After complete setup: '[Color] [final#]'",
+          "Example: 'Blue deposited 2' then 'Blue 12'"
+        ]
+      },
+      {
+        "title": "Schedule Change Post Format",
+        "format": "Session [#] now starting [new time] (was [old time]). Doors open [time]. Please adjust accordingly.",
+        "example": "Session 3 now starting 12:30 PM (was 12:00 PM). Doors open 12:15 PM. Please adjust accordingly."
+      },
+      {
+        "title": "General Telegram Best Practices",
+        "do": [
+          "Post in correct topic (Medical, Seating, Room Reset, etc.)",
+          "Use GROUP thread, not private messages",
+          "Be clear and concise",
+          "Include all relevant details",
+          "Tag people if specific person needed (@Name)",
+          "Check constantly throughout day",
+          "Respond to posts requiring your response"
+        ],
+        "dont": [
+          "Post off-topic content",
+          "Share confidential participant info publicly",
+          "Gossip or complain in Team Chat",
+          "Spam with unnecessary messages",
+          "Ignore urgent posts",
+          "Use for personal socializing during event"
+        ]
+      }
+    ]
+  }
+}

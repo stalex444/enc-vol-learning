@@ -1,0 +1,44 @@
+{
+  "id": "02",
+  "moduleId": "appendix",
+  "title": "Breath Contraindications Letter",
+  "type": "reference",
+  "estimatedTime": "Quick Reference",
+  
+  "content": {
+    "intro": "Sample letter sent to participants with medical conditions that require modified breathwork practice.",
+    
+    "letterText": "Dear Participant,\n\nI hope this message finds you well. We are pleased to confirm your registration for the [EVENT NAME] with Dr. Joe Dispenza. Upon reviewing the information provided during your registration or medical Zoom evaluation, we have identified certain medical considerations that may require modifications to the breathwork practice during the retreat. Please review the details below carefully.",
+    
+    "section1": {
+      "title": "Breathwork Contraindications",
+      "content": "Breathwork induces specific physiological changes in the body and may lead to significant physical and emotional release. As a precaution, the following conditions may require modifications to the breathwork exercises:",
+      "conditions": [
+        "Pregnancy (at any stage)",
+        "Severe post-traumatic stress disorder (PTSD) or other trauma",
+        "Active use of recreational drugs",
+        "Medications that alter brain chemistry (e.g., medications for anxiety, depression, ADD, OCD)",
+        "Prescription blood thinners or anti-clotting medications",
+        "Epilepsy",
+        "Detached retina",
+        "Glaucoma",
+        "Cardiovascular disease (including angina, history of heart attack, or other cardiovascular issues)",
+        "Strokes or transient ischemic attacks (TIAs)",
+        "Seizures (past or present) or other neurological conditions or diseases",
+        "Aneurysm diagnosis (of any kind)",
+        "Prior diagnosis of bipolar disorder, schizophrenia, or other psychiatric conditions",
+        "Recent surgery, stitches, or injury within the last six months (including laparoscopic procedures and hernias)"
+      ]
+    },
+    
+    "section2": {
+      "title": "Modified Breathwork Practice",
+      "content": "If any of the above conditions apply to you, we recommend practicing modified, gentler versions of the breathwork exercises during the retreat. Dr. Joe will guide the full breathwork practice, and we respectfully request that if you have any of the listed conditions, you engage with the modified version to ensure your safety.\n\nThe modifications are designed to minimize actions that could increase pressure in the head or brain, such as pulling, pushing, or squeezing the abdominal or pelvic muscles. Instead, a slower, steady breath, with a focus on gently releasing air through the nose, can be practiced, with special attention to the pineal gland area. It is important to avoid squeezing, pulling up, or pushing of the perineal and abdominal muscles."
+    },
+    
+    "section3": {
+      "title": "Contact Information",
+      "content": "Our support team is available to assist you throughout your journey. If you have any questions or require further clarification, please reach out to:\n\n• Keysi Del Valle, RN, BSN - Medcare@drjoedispenza.com\n• Jessica Sprague - Medsupport@drjoedispenza.com\n\nWe look forward to supporting you and ensuring you have a safe and transformative experience at the retreat.\n\nWarm regards,\nKeysi M. Del Valle, RN, BSN\nEncephalon Event Medical Lead"
+    }
+  }
+}

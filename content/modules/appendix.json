@@ -1,0 +1,40 @@
+{
+  "id": "appendix",
+  "title": "Appendix: Quick Reference Materials",
+  "description": "Essential cheat sheets and protocols for quick reference during events",
+  "icon": "📋",
+  "color": "slate",
+  
+  "chapters": [
+    {
+      "id": "01",
+      "title": "Group Lead Cheat Sheet",
+      "description": "Complete reference for Group Lead responsibilities"
+    },
+    {
+      "id": "02",
+      "title": "Breath Contraindications Letter",
+      "description": "Sample letter template for participants with medical restrictions"
+    },
+    {
+      "id": "03",
+      "title": "Telegram Quick Reference",
+      "description": "Message formats and best practices for Telegram communication"
+    },
+    {
+      "id": "04",
+      "title": "Gravity Chair Quick Reference",
+      "description": "Step-by-step daily reset process and critical rules"
+    },
+    {
+      "id": "05",
+      "title": "Medical Request Quick Guide",
+      "description": "When to call Medical, MA, or Emotional Support"
+    },
+    {
+      "id": "06",
+      "title": "Code of Conduct Quick Reference",
+      "description": "DOs, DON'Ts, and key reminders for volunteers"
+    }
+  ]
+}

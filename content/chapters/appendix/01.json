@@ -1,0 +1,100 @@
+{
+  "id": "01",
+  "moduleId": "appendix",
+  "title": "Group Lead Cheat Sheet",
+  "type": "reference",
+  "estimatedTime": "Quick Reference",
+  
+  "content": {
+    "sections": [
+      {
+        "title": "Pre-Event Communication",
+        "items": [
+          "Create Telegram group & topics (General, Seating, CH, Medical, etc.)",
+          "Send daily messages leading up to event",
+          "Identify group arrivals & review seating chart"
+        ]
+      },
+      {
+        "title": "Seating Management",
+        "items": [
+          "Organize reserved signs by numbering and labeling them",
+          "Collect signs each morning & replace as needed",
+          "Track missing or damaged signs, create workflow"
+        ]
+      },
+      {
+        "title": "Registration Day Prep",
+        "items": [
+          "Set up materials: T-shirts, banners, lanyards, wristbands, iPads",
+          "Know registration workflow & check-in targets",
+          "Prepare for special needs participants"
+        ]
+      },
+      {
+        "title": "Compassionate Registration",
+        "items": [
+          "Greet participants warmly, answer FAQs",
+          "Ensure special needs participants have proper seating",
+          "Track manual & electronic registration counts"
+        ]
+      },
+      {
+        "title": "Building Coherent Team",
+        "items": [
+          "Assign key roles (GLA, HST, Greeters, etc.)",
+          "Establish responsibilities for chair bands, group signs, reserved signs",
+          "Foster participant connections"
+        ]
+      },
+      {
+        "title": "Sacred Space Setup",
+        "items": [
+          "Set seating & reserved signs per the map",
+          "Post seating plan each night in Telegram",
+          "Manage missing signs before morning break"
+        ]
+      },
+      {
+        "title": "Doors Open & Welcoming",
+        "items": [
+          "Guide participants to seats, collect reserved signs",
+          "Ensure smooth flow & accessibility",
+          "Daily team huddles before doors open"
+        ]
+      },
+      {
+        "title": "Coherence Healing (CH) Setup",
+        "items": [
+          "Plan seating configurations, align with medical team",
+          "Organize HealEEs & HealERs, maintain order",
+          "Manage supplies (blankets, sheets, pens)"
+        ]
+      },
+      {
+        "title": "Documentation & Updates",
+        "items": [
+          "Use Google Sheets for real-time updates",
+          "Post seating maps & missing sign lists",
+          "Track medical and special participant needs"
+        ]
+      },
+      {
+        "title": "Maintaining Safe & Sacred Space",
+        "items": [
+          "Monitor fire exits & restricted areas",
+          "Guide participants with kindness & clarity",
+          "Preserve seating integrity"
+        ]
+      },
+      {
+        "title": "Leadership & Service",
+        "items": [
+          "Daily huddles & role rotations",
+          "Support team members & recognize contributions",
+          "Maintain personal energy & coherence"
+        ]
+      }
+    ]
+  }
+}

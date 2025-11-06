@@ -1,0 +1,28 @@
+{
+  "quotes": [
+    {
+      "id": "transformation",
+      "text": "When you change your energy, you change your life. When you change your life, you change the world.",
+      "context": "On the power of personal transformation",
+      "category": "transformation"
+    },
+    {
+      "id": "presence",
+      "text": "The moment you start feeling, you start healing.",
+      "context": "On emotional awareness and healing",
+      "category": "healing"
+    },
+    {
+      "id": "meditation",
+      "text": "Meditation is not about becoming a different person. It's about training in awareness and getting a healthy sense of perspective.",
+      "context": "On the purpose of meditation practice",
+      "category": "meditation"
+    },
+    {
+      "id": "community",
+      "text": "When a community comes together with a common intention, the field becomes coherent.",
+      "context": "On the power of collective consciousness",
+      "category": "community"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "05",
+  "moduleId": "appendix",
+  "title": "Medical Request Quick Guide",
+  "type": "reference",
+  "estimatedTime": "Quick Reference",
+  
+  "content": {
+    "sections": [
+      {
+        "title": "When to Request Medical (Keysi)",
+        "always": [
+          "Chest pains, difficulty breathing",
+          "Active bleeding",
+          "Participant in pain",
+          "Hard fall",
+          "Feeling ill or faint",
+          "Vomiting",
+          "Requesting temp/BP check",
+          "Constant coughing"
+        ],
+        "never": [
+          "Asking for Advil, Tylenol, antacids (→ Customer Care)",
+          "Requesting ice packs or Band-Aids (→ Customer Care)",
+          "Asking for food, tea, lemons, crackers (→ hotel)",
+          "Needing meditation support (→ MA)"
+        ]
+      },
+      {
+        "title": "When to Request Meditation Assist (MA)",
+        "situations": [
+          "Moving energy, disoriented, unsteady",
+          "Not returning after meditation",
+          "Fainting (non-injury) during breath"
+        ]
+      },
+      {
+        "title": "When to Request Emotional Support (Grace/Agnes)",
+        "situations": [
+          "Participant sharing something \"off\" or concerning",
+          "Crying and checking in brings more tears/confusion",
+          "Anxious, depressed, emotionally overwhelmed",
+          "Paranoid, fantastical, or suicidal talk",
+          "Feeling uncomfortable due to someone's behavior",
+          "Appears drunk or high",
+          "Mentions suicidal thoughts/PTSD/recent trauma"
+        ]
+      },
+      {
+        "title": "Telegram Post Format",
+        "include": [
+          "Participant's Full Name",
+          "Group Color",
+          "Location (pin if helpful)",
+          "Factual description",
+          "Photo (if permitted)",
+          "Phone Number with Country Code"
+        ],
+        "important": "DO NOT share emotional details in Telegram—just facts. Stay with participant until support arrives."
+      }
+    ]
+  }
+}

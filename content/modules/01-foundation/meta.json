@@ -1,0 +1,30 @@
+{
+  "id": "01-foundation",
+  "title": "Foundation",
+  "description": "Understanding your sacred responsibility as crew",
+  "icon": "🦋",
+  "order": 1,
+  "chapters": [
+    {
+      "id": "01-welcome",
+      "title": "Welcome to Encephalon",
+      "description": "Introduction to your role as crew",
+      "order": 1,
+      "estimatedTime": 15
+    },
+    {
+      "id": "02-sacred-responsibility",
+      "title": "Sacred Responsibility",
+      "description": "Understanding the depth of your commitment",
+      "order": 2,
+      "estimatedTime": 20
+    },
+    {
+      "id": "03-agreements",
+      "title": "Crew Agreements",
+      "description": "The commitments we make together",
+      "order": 3,
+      "estimatedTime": 10
+    }
+  ]
+}

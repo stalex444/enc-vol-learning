@@ -1,0 +1,51 @@
+{
+  "id": "welcome",
+  "type": "introduction",
+  "title": "Welcome to Volunteer Training",
+  
+  "hero": {
+    "title": "Welcome Home",
+    "subtitle": "You're about to begin a training that will transform how you serve—and who you become through service.",
+    "quote": {
+      "text": "When we give from the heart, we're in alignment with the divine. And in that state, we become more of who we truly are.",
+      "author": "Dr. Joe Dispenza"
+    }
+  },
+  
+  "sections": [
+    {
+      "title": "This Isn't Ordinary Training",
+      "content": "Most training teaches you what to do. Tasks. Procedures. Checklists.\n\nThis training teaches you who to become.\n\nYes, you'll learn protocols. You'll master roles and responsibilities. You'll understand systems and procedures. All of that matters.\n\nBut beneath every protocol is a deeper invitation: to embody the work. To become the living example. To serve as the elevated being you're becoming.\n\nThis training was designed with the same consciousness that Dr. Joe brings to his teachings. Every chapter. Every story. Every learning moment. Crafted to facilitate genuine transformation.\n\nNot information transfer. Transformation."
+    },
+    {
+      "title": "How This Training Works: The Four-Phase Learning Cycle",
+      "content": "Each chapter follows a mastery-based learning model designed to move knowledge from your head to your heart to your hands.\n\n**PHASE 1: PRIME**\nYou begin with breath. Centering. Presence.\n\nThen a story—not abstract theory, but real experience from real volunteers. Stories anchor learning in human reality.\n\nThen \"Why This Matters\"—the deeper purpose beneath the protocol. The consciousness behind the technique.\n\nThis phase primes your nervous system. Opens your heart. Prepares you to receive.\n\n**PHASE 2: IMMERSE**\nDeep dive into the content. The protocols. The specifics. The nuance.\n\nNot just bullet points. Full explanations. Context. Reasoning. The why behind the what.\n\nYou immerse completely. Like meditation—you go deep, you stay present, you integrate fully.\n\n**PHASE 3: INTEGRATE**\nScenario-based quizzes test real understanding, not memorization.\n\nYou're given complex situations. Multiple options. You choose.\n\nThe feedback teaches. Not just \"right\" or \"wrong\"—but why. What you understood. What you missed. How to think through similar situations.\n\nThis is where learning becomes wisdom.\n\n**PHASE 4: ANCHOR**\nSummary. Integration. Reflection.\n\nKey points crystallized. Connections made explicit. Invitation to embody.\n\nThis phase anchors the learning. Seals it. Makes it yours.\n\nThen you move to the next chapter. Each building on the last. Each deepening your capacity.\n\nThis is mastery-based learning. You don't move forward until you truly understand. Not because you're being tested—because you're being transformed."
+    },
+    {
+      "title": "What You'll Learn",
+      "content": "**MODULE 1: FOUNDATION**\nThe sacred nature of service. The agreements that protect the work. The structure of the event and how we communicate.\n\n**MODULE 2: COMMUNICATION & SUPPORT**\nHow to request and coordinate the three types of support: Medical, Emotional, and Meditation Assistance. Telegram protocols. Emergency response.\n\n**MODULE 3: ROLES & RESPONSIBILITIES**\nDetailed breakdown of every volunteer role—Week Long duties, Registration Day roles, and Additional Duties. What each role does, why it matters, how to execute with excellence.\n\n**MODULE 4: CRITICAL PROTOCOLS**\nMedical emergency response. Seizure protocol. Gravity chair management. The protocols that protect participants' safety and dignity.\n\nEach module builds your capacity. Each chapter deepens your understanding. By the end, you won't just know what to do—you'll know who to be."
+    },
+    {
+      "title": "How to Use This Training",
+      "content": "**Go in order:**\nChapters build on each other. Don't skip ahead. Each prepares you for the next.\n\n**Take your time:**\nThis isn't a race. Some chapters take 12 minutes. Some take 20. Give each the time it needs.\n\n**Do the quizzes:**\nThey're not tests—they're learning tools. The feedback is where integration happens. Don't skip them.\n\n**Revisit as needed:**\nBefore your first event, complete the full training. Before subsequent events, review chapters relevant to your role. The content is designed for both initial learning and ongoing reference.\n\n**Stay present:**\nThis is meditation in a different form. Be here. Be open. Let the learning land not just in your mind, but in your body. In your heart. In your being.\n\n**Trust the process:**\nYou might wonder why a story matters. Why so much context. Why such depth.\n\nTrust that every element was designed intentionally. To facilitate not just learning, but becoming.\n\nYou're being prepared not just to volunteer. You're being prepared to lead. To hold space. To embody the work.\n\nThat requires more than information. It requires transformation."
+    },
+    {
+      "title": "A Note on Excellence",
+      "content": "This training was built with the same level of care and precision that we bring to the events themselves.\n\nNothing is arbitrary. Every word matters. Every structure serves.\n\nThe stories are real. The protocols are tested. The wisdom is earned through years of collective experience.\n\nYou're receiving the distilled essence of what hundreds of volunteers have learned through thousands of hours of service.\n\nHonor that. Don't rush through it. Don't skim it. Don't skip sections thinking you already know.\n\nApproach this training the way you'd approach Dr. Joe's teachings: with presence, humility, and genuine willingness to be changed by what you encounter.\n\nBecause that's what this is. Not a manual. Not a handbook. A transmission.\n\nFrom the heart of this work to yours."
+    },
+    {
+      "title": "You're Ready",
+      "content": "If you're here, you've already said yes to something sacred.\n\nYou've completed the journey from student to volunteer. You've felt the call to serve. You've chosen to give back.\n\nThis training will prepare you for what comes next. It will teach you what you need to know. It will grow you in ways you can't yet imagine.\n\nBut the real training? That happens in the field. In the ballroom. With real participants. In real moments. Under real pressure.\n\nThis prepares you for that. This gives you the foundation. The framework. The confidence.\n\nThe rest? You'll learn by doing. By showing up. By staying present. By choosing love. By serving.\n\nAnd we'll be right there with you. Every step. Every challenge. Every beautiful moment.\n\nWelcome to the volunteer family. We've been waiting for you."
+    }
+  ],
+  
+  "closingQuote": {
+    "text": "Let's lead by example. Let's love like never before. Let's serve as the elevated beings we are becoming.",
+    "author": "Dr. Joe Dispenza"
+  },
+  
+  "callToAction": {
+    "text": "Begin Module 1: Foundation",
+    "description": "Start your journey with understanding the sacred nature of service"
+  }
+}

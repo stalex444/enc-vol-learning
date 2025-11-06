@@ -1,0 +1,68 @@
+{
+  "id": "04",
+  "moduleId": "appendix",
+  "title": "Gravity Chair Quick Reference",
+  "type": "reference",
+  "estimatedTime": "Quick Reference",
+  
+  "content": {
+    "sections": [
+      {
+        "title": "Daily Reset Process",
+        "steps": [
+          {
+            "number": 1,
+            "text": "Check Telegram Room Reset Instructions for your section's requirements"
+          },
+          {
+            "number": 2,
+            "text": "Bring any OWN or HD chairs (permanent white tags) with you to new section"
+          },
+          {
+            "number": 3,
+            "text": "Go to your NEW section (not old one)"
+          },
+          {
+            "number": 4,
+            "text": "If DEPOSITING: Remove excess chairs from NEW section, remove reserved signs first, bring to central bank, post: '[Color] deposited [#]'"
+          },
+          {
+            "number": 5,
+            "text": "Place reserved signs in remaining chairs"
+          },
+          {
+            "number": 6,
+            "text": "If PICKING UP: Get chairs from central bank ONLY (never from walls or other sections), add to section, maintain aisle integrity, place reserved signs"
+          },
+          {
+            "number": 7,
+            "text": "Verify chairs are open, locked, stable"
+          },
+          {
+            "number": 8,
+            "text": "Count total, post: '[Color] [final#]' - Must match Room Reset Lead's posted number. If doesn't match, contact Lead immediately"
+          }
+        ]
+      },
+      {
+        "title": "Critical Rules",
+        "rules": [
+          "Trust posted numbers",
+          "NEVER write reserved signs yourself",
+          "Only take from central bank",
+          "Over-communicate early",
+          "Verify chairs locked each morning"
+        ]
+      },
+      {
+        "title": "Special Notes",
+        "notes": [
+          "OWN = participant's personal chair (white tag)",
+          "HD = Heavy Duty chair for extra support (white tag)",
+          "Reserved signs removed last lecture before CH",
+          "If dinner before reset: deposit chairs first, then eat"
+        ]
+      }
+    ]
+  }
+}
