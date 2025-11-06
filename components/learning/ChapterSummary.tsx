@@ -21,7 +21,7 @@ export const ChapterSummary: React.FC<ChapterSummaryProps> = ({ data, onComplete
               <CheckCircle className="w-10 h-10 text-green-600" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-2">Chapter Complete!</h2>
-            <p className="text-gray-600">Great work! Let's review what you've learned.</p>
+            <p className="text-gray-600">Great work! Let&apos;s review what you&apos;ve learned.</p>
           </div>
 
           <div className="mb-8">
