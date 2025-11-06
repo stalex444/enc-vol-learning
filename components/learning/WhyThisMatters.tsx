@@ -20,13 +20,13 @@ export const WhyThisMatters: React.FC<WhyThisMattersProps> = ({ data, onComplete
             <h2 className="text-3xl font-bold text-gray-900 mb-2">
               Why This Matters
             </h2>
-            <p className="text-sm text-gray-500">Dr. Joe's Perspective</p>
+            <p className="text-sm text-gray-500">Dr. Joe&apos;s Perspective</p>
           </div>
 
           <div className="bg-gradient-to-br from-purple-100 to-blue-100 p-8 rounded-lg mb-8">
             <Quote className="w-12 h-12 text-butterfly-purple mb-4" />
             <blockquote className="text-xl text-gray-800 italic mb-4">
-              "{data.quote}"
+              &ldquo;{data.quote}&rdquo;
             </blockquote>
             <p className="text-sm text-gray-600 font-semibold">— {data.author}</p>
           </div>

@@ -88,18 +88,18 @@ export function getModule(moduleId: string) {
 }
 
 export function getNextChapter(moduleId: string, chapterId: string) {
-  const module = getModule(moduleId);
-  if (!module) return null;
+  const currentModule = getModule(moduleId);
+  if (!currentModule) return null;
   
-  const currentIndex = module.chapters.findIndex(c => c.id === chapterId);
+  const currentIndex = currentModule.chapters.findIndex(c => c.id === chapterId);
   if (currentIndex === -1) return null;
   
   // Next chapter in same module
-  if (currentIndex < module.chapters.length - 1) {
+  if (currentIndex < currentModule.chapters.length - 1) {
     return {
       moduleId,
-      chapterId: module.chapters[currentIndex + 1].id,
-      title: module.chapters[currentIndex + 1].title,
+      chapterId: currentModule.chapters[currentIndex + 1].id,
+      title: currentModule.chapters[currentIndex + 1].title,
     };
   }
   
