@@ -121,9 +121,35 @@ export default function ChapterPage({
             {chapterData.title}
           </h1>
           <p className="text-gray-600">
-            Estimated time: {chapterData.estimatedTime}
+            {chapterData.estimatedTime}
           </p>
+          {chapterData.type === 'reference' && (
+            <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-sm font-medium">
+              📚 Quick Reference Guide
+            </div>
+          )}
         </div>
+
+        {/* Reference/Appendix Content */}
+        {chapterData.type === 'reference' && chapterData.content?.sections && (
+          <div className="space-y-8 mb-16">
+            {chapterData.content.sections.map((section: any, index: number) => (
+              <div key={index} className="bg-white rounded-2xl p-8 border border-primary-200 shadow-sm">
+                <h3 className="text-xl font-semibold text-primary-900 mb-4">
+                  {section.title}
+                </h3>
+                <ul className="space-y-2">
+                  {section.items?.map((item: string, i: number) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary-400 flex-shrink-0 mt-2" />
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Phase 1: Prime - Story & Why This Matters */}
         {chapterData.phase1_prime && (
@@ -232,6 +258,120 @@ export default function ChapterPage({
                 )}
               </div>
             ))}
+          </div>
+        )}
+
+        {/* Phase 3: Integrate - Quiz (if exists) */}
+        {chapterData.phase3_integrate?.quiz && (
+          <div className="space-y-8 mb-16">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="w-1 h-12 bg-gradient-to-b from-primary-400 to-primary-600 rounded-full" />
+              <h2 className="text-3xl font-light text-primary-900">Practice & Integration</h2>
+            </div>
+
+            <p className="text-gray-600 mb-8">
+              These scenarios will help you practice applying what you've learned in real situations.
+            </p>
+
+            {chapterData.phase3_integrate.quiz.map((question: any, qIndex: number) => (
+              <div key={qIndex} className="bg-white rounded-2xl p-8 border border-primary-200 shadow-sm">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0 text-primary-700 font-semibold">
+                    {qIndex + 1}
+                  </div>
+                  <p className="text-lg text-gray-800 leading-relaxed">
+                    {question.question}
+                  </p>
+                </div>
+
+                <div className="space-y-3 ml-12">
+                  {question.options.map((option: any, oIndex: number) => (
+                    <details key={oIndex} className="group">
+                      <summary className="cursor-pointer p-4 rounded-xl border-2 border-gray-200 hover:border-primary-200 bg-white transition-all list-none">
+                        <div className="flex items-center gap-3">
+                          <div className="w-5 h-5 rounded-full border-2 border-gray-300 group-open:border-primary-400 group-open:bg-primary-400 flex items-center justify-center">
+                            <div className="w-2 h-2 bg-white rounded-full opacity-0 group-open:opacity-100" />
+                          </div>
+                          <span className="text-gray-700">{option.text}</span>
+                        </div>
+                      </summary>
+                      <div className={`mt-3 ml-8 p-4 rounded-xl ${
+                        option.isCorrect
+                          ? 'bg-green-50 border border-green-200'
+                          : 'bg-amber-50 border border-amber-200'
+                      }`}>
+                        <p className={`text-sm leading-relaxed ${
+                          option.isCorrect ? 'text-green-800' : 'text-amber-800'
+                        }`}>
+                          {option.isCorrect ? '✓ ' : '! '}{option.feedback}
+                        </p>
+                      </div>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Phase 4: Anchor - Summary */}
+        {chapterData.phase4_anchor && (
+          <div className="space-y-12 mb-16">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="w-1 h-12 bg-gradient-to-b from-primary-400 to-primary-600 rounded-full" />
+              <h2 className="text-3xl font-light text-primary-900">Key Takeaways</h2>
+            </div>
+
+            {/* Summary Points */}
+            {chapterData.phase4_anchor.summary?.keyPoints && (
+              <div className="bg-gradient-to-br from-primary-50 to-sacred-violet/10 rounded-3xl p-8 md:p-12 border border-primary-100">
+                <ul className="space-y-4">
+                  {chapterData.phase4_anchor.summary.keyPoints.map((point: string, i: number) => (
+                    <li key={i} className="flex items-start gap-4">
+                      <div className="w-2 h-2 rounded-full bg-primary-400 flex-shrink-0 mt-2" />
+                      <span className="text-gray-700 leading-relaxed">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {chapterData.phase4_anchor.summary.integration && (
+                  <div className="mt-8 pt-8 border-t border-primary-200">
+                    <div className="prose prose-lg max-w-none">
+                      {chapterData.phase4_anchor.summary.integration.split('\n\n').map((paragraph: string, i: number) => (
+                        <p key={i} className="text-gray-700 leading-relaxed italic mb-4">
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Closing Quote */}
+            {chapterData.phase4_anchor.closingQuote && (
+              <div className="text-center py-8">
+                <blockquote className="text-2xl font-light italic text-gray-700 mb-4">
+                  "{chapterData.phase4_anchor.closingQuote.text}"
+                </blockquote>
+                <p className="text-primary-700 font-medium">
+                  — {chapterData.phase4_anchor.closingQuote.author}
+                </p>
+              </div>
+            )}
+
+            {/* Next Chapter Preview */}
+            {chapterData.phase4_anchor.nextChapter && (
+              <div className="bg-white rounded-2xl p-8 border border-primary-200 shadow-sm">
+                <p className="text-sm text-gray-500 mb-2">Up next</p>
+                <h3 className="text-xl font-semibold text-primary-900 mb-2">
+                  {chapterData.phase4_anchor.nextChapter.title}
+                </h3>
+                <p className="text-gray-600">
+                  {chapterData.phase4_anchor.nextChapter.preview}
+                </p>
+              </div>
+            )}
           </div>
         )}
 
