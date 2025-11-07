@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLearningStore } from '@/lib/store';
 import { getChapterContent, getNextChapter } from '@/lib/content-loader';
-import { ChapterContent } from '@/components/learning/ChapterContent';
 import { motion } from 'framer-motion';
 import { ChevronLeft, Loader2 } from 'lucide-react';
 
@@ -126,20 +125,115 @@ export default function ChapterPage({
           </p>
         </div>
 
-        {/* Simple content display - you can enhance this later */}
-        <div className="prose prose-lg max-w-none">
-          <p className="text-gray-700 leading-relaxed mb-8">
-            Chapter content will be displayed here. The chapter data is loaded from: 
-            <code className="text-sm bg-gray-100 px-2 py-1 rounded">
-              {params.moduleId}/{params.chapterId}.json
-            </code>
-          </p>
-          
-          <div className="bg-primary-50 rounded-lg p-6 mb-8">
-            <h3 className="text-lg font-semibold mb-2">Chapter ID: {chapterData.id}</h3>
-            <p className="text-sm text-gray-600">Module: {chapterData.moduleId}</p>
+        {/* Phase 1: Prime - Story & Why This Matters */}
+        {chapterData.phase1_prime && (
+          <div className="space-y-12 mb-16">
+            {/* Story */}
+            {chapterData.phase1_prime.story && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-br from-primary-50 to-sacred-violet/10 rounded-3xl p-8 md:p-12 border border-primary-100"
+              >
+                <div className="prose prose-lg max-w-none">
+                  {chapterData.phase1_prime.story.content.split('\n\n').map((paragraph: string, i: number) => (
+                    <p key={i} className="text-gray-700 leading-relaxed mb-4 last:mb-0">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+
+            {/* Why This Matters */}
+            {chapterData.phase1_prime.whyThisMatters && (
+              <div className="space-y-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-1 h-12 bg-gradient-to-b from-primary-400 to-primary-600 rounded-full" />
+                  <h2 className="text-3xl font-light text-primary-900">Why This Matters</h2>
+                </div>
+
+                {/* Quote */}
+                <div className="relative bg-white rounded-2xl p-8 border border-primary-200 shadow-sm">
+                  <div className="absolute -top-4 left-8 w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white text-2xl">
+                    🦋
+                  </div>
+                  <blockquote className="text-xl italic text-gray-700 mb-3 mt-4">
+                    "{chapterData.phase1_prime.whyThisMatters.quote}"
+                  </blockquote>
+                  <p className="text-primary-700 font-medium">
+                    — {chapterData.phase1_prime.whyThisMatters.author}
+                  </p>
+                </div>
+
+                {/* Content */}
+                <div className="prose prose-lg max-w-none">
+                  {chapterData.phase1_prime.whyThisMatters.content.split('\n\n').map((paragraph: string, i: number) => (
+                    <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+
+                {/* Learning Objectives */}
+                {chapterData.phase1_prime.learningObjectives && (
+                  <div className="bg-primary-50/50 rounded-2xl p-8 border border-primary-100">
+                    <h3 className="text-lg font-semibold text-primary-900 mb-4">
+                      In this chapter, you'll learn:
+                    </h3>
+                    <ul className="space-y-3">
+                      {chapterData.phase1_prime.learningObjectives.map((objective: string, i: number) => (
+                        <li key={i} className="flex items-start gap-3">
+                          <div className="w-6 h-6 rounded-full bg-primary-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <span className="text-white text-xs">→</span>
+                          </div>
+                          <span className="text-gray-700">{objective}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
-        </div>
+        )}
+
+        {/* Phase 2: Immerse - Main Content Sections */}
+        {chapterData.phase2_immerse?.sections && (
+          <div className="space-y-12 mb-16">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="w-1 h-12 bg-gradient-to-b from-primary-400 to-primary-600 rounded-full" />
+              <h2 className="text-3xl font-light text-primary-900">Deep Dive</h2>
+            </div>
+
+            {chapterData.phase2_immerse.sections.map((section: any, index: number) => (
+              <div key={index} className="space-y-6">
+                <h3 className="text-2xl font-light text-primary-900">
+                  {section.title}
+                </h3>
+                
+                <div className="prose prose-lg max-w-none">
+                  {section.content.split('\n\n').map((paragraph: string, i: number) => (
+                    <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+
+                {section.pullQuote && (
+                  <div className="my-8 pl-8 border-l-4 border-primary-400">
+                    <blockquote className="text-2xl font-light italic text-gray-700 mb-2">
+                      "{section.pullQuote.text}"
+                    </blockquote>
+                    <p className="text-primary-700 font-medium">
+                      — {section.pullQuote.author}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Navigation buttons */}
         <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
