@@ -7,7 +7,7 @@ export interface ChapterContent {
   estimatedTime: string;
   
   phase1_prime: {
-    breathing: {
+    breathing?: {
       intro: string;
       instructions: string;
     };

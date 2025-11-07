@@ -156,6 +156,25 @@ export default function ChapterPage({
         {/* Phase 1: Prime - Story & Why This Matters */}
         {chapterData.phase1_prime && (
           <div className="space-y-12 mb-16">
+            {/* Breathing Exercise */}
+            {chapterData.phase1_prime.breathing && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 md:p-12 border border-blue-100"
+              >
+                <div className="text-center space-y-4">
+                  <div className="text-4xl mb-4">🫁</div>
+                  <h3 className="text-2xl font-light text-gray-900">
+                    {chapterData.phase1_prime.breathing.intro}
+                  </h3>
+                  <p className="text-gray-600 max-w-2xl mx-auto">
+                    {chapterData.phase1_prime.breathing.instructions}
+                  </p>
+                </div>
+              </motion.div>
+            )}
+
             {/* Story */}
             {chapterData.phase1_prime.story && (
               <motion.div
