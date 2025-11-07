@@ -161,10 +161,10 @@ export default function ChapterPage({
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 md:p-12 border border-blue-100"
+                className="bg-gradient-to-br from-purple-50 via-indigo-50 to-blue-50 rounded-3xl p-8 md:p-12 border border-purple-100"
               >
                 <div className="text-center space-y-4">
-                  <div className="text-4xl mb-4">🫁</div>
+                  <div className="text-5xl mb-4">🪷</div>
                   <h3 className="text-2xl font-light text-gray-900">
                     {chapterData.phase1_prime.breathing.intro}
                   </h3>
