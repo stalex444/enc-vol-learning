@@ -282,6 +282,29 @@ export default function ChapterPage({
           </div>
         )}
 
+        {/* Phase 3: Integrate - Reflection (if exists) */}
+        {chapterData.phase3_integrate?.reflection && (
+          <div className="mb-16">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="w-1 h-12 bg-gradient-to-b from-primary-400 to-primary-600 rounded-full" />
+              <h2 className="text-3xl font-light text-primary-900">Reflection</h2>
+            </div>
+
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-200">
+              <p className="text-gray-700 mb-6 text-lg">
+                {chapterData.phase3_integrate.reflection.prompt}
+              </p>
+              <textarea
+                placeholder={chapterData.phase3_integrate.reflection.placeholder}
+                className="w-full h-32 p-4 rounded-lg border border-amber-300 focus:border-primary-400 focus:ring-2 focus:ring-primary-200 outline-none resize-none"
+              />
+              <p className="text-sm text-gray-500 mt-2">
+                💭 Your reflection is private and not saved
+              </p>
+            </div>
+          </div>
+        )}
+
         {/* Phase 3: Integrate - Quiz (if exists) */}
         {chapterData.phase3_integrate?.quiz && (
           <div className="space-y-8 mb-16">
