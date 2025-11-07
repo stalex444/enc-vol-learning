@@ -105,31 +105,6 @@
             "feedback": "Trust isn't the issue—consent is. No participant gave permission for their story to be shared outside the event, regardless of who you're telling. This is a non-negotiable boundary. The retreat is a sanctuary, and you're the guardian of what happens within it. Once you share, you can't control where it goes."
           }
         ]
-      },
-      {
-        "question": "During a meditation, you notice a participant shaking intensely and making loud sounds. Other participants nearby look uncomfortable. What do you do?",
-        "options": [
-          {
-            "text": "Stay calm and present. Observe to ensure they're not in physical danger. If the shaking continues or escalates, quietly signal a Meditation Assistant (MA)",
-            "isCorrect": true,
-            "feedback": "Yes. You understand that moving energy can look dramatic but is often part of the process. Your role is to stay grounded, assess for actual danger (falling, hitting someone), and call for support if needed. Your calm presence helps the entire section stay regulated. This is exactly the kind of discernment you'll develop."
-          },
-          {
-            "text": "Immediately approach them and ask if they're okay, even though the meditation is still in progress",
-            "isCorrect": false,
-            "feedback": "This interrupts their process and can actually be jarring. Unless there's immediate physical danger (about to fall, hitting others), trust the process. Participants are often deep in subconscious work—your voice pulling them out prematurely can disrupt a breakthrough. Observe first. The MA team is trained to assess when to intervene."
-          },
-          {
-            "text": "Try to calm them down by placing your hand on their shoulder or speaking softly to them",
-            "isCorrect": false,
-            "feedback": "Never touch a participant during a meditation without explicit training. They may be processing trauma, and unexpected touch can be retraumatizing. Your intention is good, but this crosses an important boundary. Stay present, stay close enough to help if needed, but let them have their experience. Call the MA if concerned."
-          },
-          {
-            "text": "Ask nearby participants to move away to give the person more space",
-            "isCorrect": false,
-            "feedback": "Moving other participants during meditation creates more disruption than it solves. Everyone is deep in their own process. Instead, position yourself nearby to ensure safety. If the situation truly requires intervention, the MA will handle relocation. Your job is to hold space, not manage the room layout mid-meditation."
-          }
-        ]
       }
     ]
   },
