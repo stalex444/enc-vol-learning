@@ -15,6 +15,7 @@ export default function ChapterPage({
   const [chapterData, setChapterData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isNavigating, setIsNavigating] = useState(false);
   const router = useRouter();
   const markChapterComplete = useLearningStore((state) => state.markChapterComplete);
 
@@ -42,6 +43,7 @@ export default function ChapterPage({
   }, [params.moduleId, params.chapterId]);
 
   const handleChapterComplete = (score: number) => {
+    setIsNavigating(true);
     markChapterComplete(params.moduleId, params.chapterId, score);
     
     // Navigate to next chapter or back to modules
@@ -386,9 +388,19 @@ export default function ChapterPage({
           
           <button
             onClick={() => handleChapterComplete(100)}
-            className="px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-full font-medium hover:shadow-lg transition-all"
+            disabled={isNavigating}
+            className="px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-full font-medium hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
           >
-            Complete & Continue →
+            {isNavigating ? (
+              <>
+                <Loader2 className="w-5 h-5 animate-spin" />
+                Loading next chapter...
+              </>
+            ) : (
+              <>
+                Complete & Continue →
+              </>
+            )}
           </button>
         </div>
       </div>
