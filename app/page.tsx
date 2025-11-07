@@ -103,7 +103,7 @@ export default function WelcomePage() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <Link href="/learn">
+          <Link href="/learn/01-foundation/01">
             <button className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-full font-medium text-lg hover:from-primary-600 hover:to-primary-700 transition-all shadow-lg hover:shadow-xl">
               {welcomeData.callToAction.text}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
