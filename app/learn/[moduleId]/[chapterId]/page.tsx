@@ -46,24 +46,32 @@ export default function ChapterPage({
     try {
       setIsNavigating(true);
       
+      console.log('Completing chapter:', params.moduleId, params.chapterId);
+      
       // Mark chapter as complete in store
       markChapterComplete(params.moduleId, params.chapterId, score);
       
       // Small delay to ensure state is saved
-      await new Promise(resolve => setTimeout(resolve, 100));
+      await new Promise(resolve => setTimeout(resolve, 200));
       
       // Navigate to next chapter or back to modules
       const nextChapter = getNextChapter(params.moduleId, params.chapterId);
       
+      console.log('Next chapter:', nextChapter);
+      
       if (nextChapter) {
+        console.log('Navigating to:', `/learn/${nextChapter.moduleId}/${nextChapter.chapterId}`);
         // Force a full navigation with refresh
         window.location.href = `/learn/${nextChapter.moduleId}/${nextChapter.chapterId}`;
       } else {
-        // Completed all chapters
-        window.location.href = '/learn/complete';
+        console.log('All chapters complete, going to modules page');
+        // Completed all chapters in current module, go back to modules
+        window.location.href = '/learn';
       }
     } catch (error) {
       console.error('Error completing chapter:', error);
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
+      alert('Navigation error: ' + errorMessage);
       setIsNavigating(false);
     }
   };
@@ -433,7 +441,7 @@ export default function ChapterPage({
         {/* Navigation buttons */}
         <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
           <button
-            onClick={() => router.push('/learn')}
+            onClick={() => window.location.href = '/learn'}
             className="px-6 py-3 text-gray-600 hover:text-primary-600 transition-colors"
           >
             ← Back to Modules
