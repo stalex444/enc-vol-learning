@@ -28,34 +28,39 @@ export default function Error({
           Something went wrong
         </h1>
         
-        <p className="text-gray-600 mb-8">
+        <p className="text-gray-600 mb-4">
           We encountered an unexpected error. Don't worry - your progress is saved.
         </p>
 
+        {/* Always show error message */}
+        <div className="mb-8 p-4 bg-red-50 border border-red-200 rounded-lg text-left">
+          <p className="text-sm font-semibold text-red-900 mb-2">Error:</p>
+          <p className="text-sm text-red-800">{error.message}</p>
+        </div>
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
-            onClick={() => reset()}
+            onClick={() => window.location.href = '/learn'}
             className="px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-full font-medium hover:shadow-lg transition-all"
           >
-            Try again
+            Back to Modules
           </button>
           
           <button
-            onClick={() => router.push('/')}
+            onClick={() => window.location.href = '/'}
             className="px-6 py-3 bg-white text-primary-700 border-2 border-primary-200 rounded-full font-medium hover:border-primary-400 transition-all"
           >
             Go to home
           </button>
         </div>
 
-        {process.env.NODE_ENV === 'development' && (
+        {process.env.NODE_ENV === 'development' && error.stack && (
           <details className="mt-8 text-left">
             <summary className="text-sm text-gray-500 cursor-pointer hover:text-gray-700">
-              Error details (development only)
+              Stack trace (development only)
             </summary>
             <pre className="mt-4 p-4 bg-gray-100 rounded-lg text-xs overflow-auto">
-              {error.message}
-              {error.stack && `\n\n${error.stack}`}
+              {error.stack}
             </pre>
           </details>
         )}
