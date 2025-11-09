@@ -65,8 +65,21 @@ export default function WelcomePage() {
               <h2 className="text-3xl font-semibold text-primary-900 mb-6">
                 {section.title}
               </h2>
-              <div className="text-gray-700 leading-relaxed whitespace-pre-line">
-                {section.content}
+              <div className="text-gray-700 leading-relaxed">
+                {section.content.split('\n\n').map((paragraph, pIndex) => {
+                  // Parse bold text (**text**)
+                  const parts = paragraph.split(/(\*\*.*?\*\*)/g);
+                  return (
+                    <p key={pIndex} className="mb-4 last:mb-0">
+                      {parts.map((part, partIndex) => {
+                        if (part.startsWith('**') && part.endsWith('**')) {
+                          return <strong key={partIndex}>{part.slice(2, -2)}</strong>;
+                        }
+                        return <span key={partIndex}>{part}</span>;
+                      })}
+                    </p>
+                  );
+                })}
               </div>
             </motion.div>
           ))}
