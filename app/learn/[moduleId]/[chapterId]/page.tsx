@@ -319,26 +319,73 @@ export default function ChapterPage({
                   <h2 className="text-3xl font-light text-primary-900">Why This Matters</h2>
                 </div>
 
-                {/* Quote */}
-                <div className="relative bg-white rounded-2xl p-8 border border-primary-200 shadow-sm">
-                  <div className="absolute -top-4 left-8 w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white text-2xl">
-                    🦋
+                {/* Quote (if exists) */}
+                {chapterData.phase1_prime.whyThisMatters.quote && (
+                  <div className="relative bg-white rounded-2xl p-8 border border-primary-200 shadow-sm">
+                    <div className="absolute -top-4 left-8 w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white text-2xl">
+                      🦋
+                    </div>
+                    <blockquote className="text-xl italic text-gray-700 mb-3 mt-4">
+                      "{chapterData.phase1_prime.whyThisMatters.quote}"
+                    </blockquote>
+                    <p className="text-primary-700 font-medium">
+                      — {chapterData.phase1_prime.whyThisMatters.author}
+                    </p>
                   </div>
-                  <blockquote className="text-xl italic text-gray-700 mb-3 mt-4">
-                    "{chapterData.phase1_prime.whyThisMatters.quote}"
-                  </blockquote>
-                  <p className="text-primary-700 font-medium">
-                    — {chapterData.phase1_prime.whyThisMatters.author}
-                  </p>
-                </div>
+                )}
 
                 {/* Content */}
                 <div className="prose prose-lg max-w-none">
-                  {chapterData.phase1_prime.whyThisMatters.content.split('\n\n').map((paragraph: string, i: number) => (
-                    <p key={i} className="text-gray-700 leading-relaxed mb-4">
-                      {paragraph}
-                    </p>
-                  ))}
+                  {chapterData.phase1_prime.whyThisMatters.content.split('\n\n').map((paragraph: string, i: number) => {
+                    // Handle inline bullets
+                    if (paragraph.match(/[:.]\s*•/)) {
+                      const match = paragraph.match(/(.*?)[:.]\s*•\s*([\s\S]+)/);
+                      if (match) {
+                        const [, intro, bulletText] = match;
+                        const items = bulletText.split(/\s*•\s*/).filter(item => item.trim());
+                        
+                        return (
+                          <div key={i} className="mb-6">
+                            {intro && (
+                              <p className="text-gray-700 leading-relaxed mb-3">
+                                {intro.split(/(\*\*.*?\*\*)/g).map((part, j) => 
+                                  part.startsWith('**') && part.endsWith('**') 
+                                    ? <strong key={j} className="font-semibold">{part.slice(2, -2)}</strong>
+                                    : part
+                                )}:
+                              </p>
+                            )}
+                            <ul className="list-disc ml-6 space-y-2">
+                              {items.map((item, j) => {
+                                const parts = item.split(/(\*\*.*?\*\*)/g);
+                                return (
+                                  <li key={j} className="text-gray-700 leading-relaxed">
+                                    {parts.map((part, k) => 
+                                      part.startsWith('**') && part.endsWith('**')
+                                        ? <strong key={k} className="font-semibold">{part.slice(2, -2)}</strong>
+                                        : part
+                                    )}
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                        );
+                      }
+                    }
+                    
+                    // Regular paragraph with bold support
+                    const parts = paragraph.split(/(\*\*.*?\*\*)/g);
+                    return (
+                      <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                        {parts.map((part, j) => 
+                          part.startsWith('**') && part.endsWith('**')
+                            ? <strong key={j} className="font-semibold">{part.slice(2, -2)}</strong>
+                            : part
+                        )}
+                      </p>
+                    );
+                  })}
                 </div>
 
                 {/* Learning Objectives */}
