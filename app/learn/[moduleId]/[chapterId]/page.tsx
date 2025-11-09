@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import { useLearningStore } from '@/lib/store';
 import { getChapterContent, getNextChapter } from '@/lib/content-loader';
 import { motion } from 'framer-motion';
@@ -15,8 +14,6 @@ export default function ChapterPage({
   const [chapterData, setChapterData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [isNavigating, setIsNavigating] = useState(false);
-  const router = useRouter();
   const markChapterComplete = useLearningStore((state) => state.markChapterComplete);
 
   useEffect(() => {
@@ -42,37 +39,19 @@ export default function ChapterPage({
     loadChapter();
   }, [params.moduleId, params.chapterId]);
 
-  const handleChapterComplete = async (score: number) => {
-    try {
-      setIsNavigating(true);
-      
-      console.log('Completing chapter:', params.moduleId, params.chapterId);
-      
-      // Mark chapter as complete in store
-      markChapterComplete(params.moduleId, params.chapterId, score);
-      
-      // Small delay to ensure state is saved
-      await new Promise(resolve => setTimeout(resolve, 200));
-      
-      // Navigate to next chapter or back to modules
-      const nextChapter = getNextChapter(params.moduleId, params.chapterId);
-      
-      console.log('Next chapter:', nextChapter);
-      
-      if (nextChapter) {
-        console.log('Navigating to:', `/learn/${nextChapter.moduleId}/${nextChapter.chapterId}`);
-        // Force a full navigation with refresh
-        window.location.href = `/learn/${nextChapter.moduleId}/${nextChapter.chapterId}`;
-      } else {
-        console.log('All chapters complete, going to modules page');
-        // Completed all chapters in current module, go back to modules
-        window.location.href = '/learn';
-      }
-    } catch (error) {
-      console.error('Error completing chapter:', error);
-      const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
-      alert('Navigation error: ' + errorMessage);
-      setIsNavigating(false);
+  const handleChapterComplete = (score: number) => {
+    // Mark chapter as complete in store
+    markChapterComplete(params.moduleId, params.chapterId, score);
+    
+    // Navigate to next chapter or back to modules
+    const nextChapter = getNextChapter(params.moduleId, params.chapterId);
+    
+    if (nextChapter) {
+      // Go to next chapter
+      window.location.href = `/learn/${nextChapter.moduleId}/${nextChapter.chapterId}`;
+    } else {
+      // Go back to modules page
+      window.location.href = '/learn';
     }
   };
 
@@ -101,7 +80,7 @@ export default function ChapterPage({
             This chapter may not be available yet or there was an error loading it.
           </p>
           <button
-            onClick={() => router.push('/learn')}
+            onClick={() => window.location.href = '/learn'}
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-400 to-primary-600 text-white rounded-full font-medium hover:shadow-lg transition-all"
           >
             <ChevronLeft className="w-4 h-4" />
@@ -118,14 +97,14 @@ export default function ChapterPage({
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
           <button
-            onClick={() => router.push('/')}
+            onClick={() => window.location.href = '/'}
             className="hover:text-primary-600 transition-colors"
           >
             Home
           </button>
           <span>/</span>
           <button
-            onClick={() => router.push('/learn')}
+            onClick={() => window.location.href = '/learn'}
             className="hover:text-primary-600 transition-colors"
           >
             Modules
@@ -449,19 +428,9 @@ export default function ChapterPage({
           
           <button
             onClick={() => handleChapterComplete(100)}
-            disabled={isNavigating}
-            className="px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-full font-medium hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+            className="px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-full font-medium hover:shadow-lg transition-all flex items-center gap-2"
           >
-            {isNavigating ? (
-              <>
-                <Loader2 className="w-5 h-5 animate-spin" />
-                Loading next chapter...
-              </>
-            ) : (
-              <>
-                Complete & Continue →
-              </>
-            )}
+            Complete & Continue →
           </button>
         </div>
       </div>
