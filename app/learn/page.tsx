@@ -138,9 +138,26 @@ export default function HomePage() {
 // Module Card Component - Refined, tactile
 function ModuleCard({ module, index }: { module: any; index: number }) {
   const getModuleProgress = useLearningStore((state) => state.getModuleProgress);
+  const isChapterComplete = useLearningStore((state) => state.isChapterComplete);
   const moduleProgress = getModuleProgress(module.id);
   const isStarted = moduleProgress > 0;
   const isComplete = moduleProgress === 100;
+
+  // Find the first incomplete chapter or default to 01
+  const getNextChapterId = () => {
+    const moduleData = modulesData.modules.find(m => m.id === module.id);
+    if (!moduleData) return '01';
+    
+    for (const chapter of moduleData.chapters) {
+      if (!isChapterComplete(module.id, chapter.id)) {
+        return chapter.id;
+      }
+    }
+    // All complete, go to first chapter
+    return '01';
+  };
+
+  const nextChapterId = getNextChapterId();
 
   return (
     <motion.div
@@ -148,7 +165,7 @@ function ModuleCard({ module, index }: { module: any; index: number }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1 }}
     >
-      <Link href={`/learn/${module.id}/01`}>
+      <Link href={`/learn/${module.id}/${nextChapterId}`}>
         <div className="group relative bg-white rounded-2xl border border-gray-200 hover:border-primary-300 transition-all duration-300 hover:shadow-lg overflow-hidden">
           {/* Colored accent bar */}
           <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${module.color}`} />

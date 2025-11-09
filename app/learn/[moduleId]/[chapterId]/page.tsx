@@ -42,18 +42,29 @@ export default function ChapterPage({
     loadChapter();
   }, [params.moduleId, params.chapterId]);
 
-  const handleChapterComplete = (score: number) => {
-    setIsNavigating(true);
-    markChapterComplete(params.moduleId, params.chapterId, score);
-    
-    // Navigate to next chapter or back to modules
-    const nextChapter = getNextChapter(params.moduleId, params.chapterId);
-    
-    if (nextChapter) {
-      router.push(`/learn/${nextChapter.moduleId}/${nextChapter.chapterId}`);
-    } else {
-      // Completed all chapters
-      router.push('/learn/complete');
+  const handleChapterComplete = async (score: number) => {
+    try {
+      setIsNavigating(true);
+      
+      // Mark chapter as complete in store
+      markChapterComplete(params.moduleId, params.chapterId, score);
+      
+      // Small delay to ensure state is saved
+      await new Promise(resolve => setTimeout(resolve, 100));
+      
+      // Navigate to next chapter or back to modules
+      const nextChapter = getNextChapter(params.moduleId, params.chapterId);
+      
+      if (nextChapter) {
+        // Force a full navigation with refresh
+        window.location.href = `/learn/${nextChapter.moduleId}/${nextChapter.chapterId}`;
+      } else {
+        // Completed all chapters
+        window.location.href = '/learn/complete';
+      }
+    } catch (error) {
+      console.error('Error completing chapter:', error);
+      setIsNavigating(false);
     }
   };
 
