@@ -131,23 +131,144 @@ export default function ChapterPage({
         </div>
 
         {/* Reference/Appendix Content */}
-        {chapterData.type === 'reference' && chapterData.content?.sections && (
+        {chapterData.type === 'reference' && chapterData.content && (
           <div className="space-y-8 mb-16">
-            {chapterData.content.sections.map((section: any, index: number) => (
+            {/* Intro text if present */}
+            {chapterData.content.intro && (
+              <div className="bg-primary-50 border-l-4 border-primary-400 p-6 rounded-r-lg">
+                <p className="text-gray-700">{chapterData.content.intro}</p>
+              </div>
+            )}
+
+            {/* Letter text (for Breath Contraindications) */}
+            {chapterData.content.letterText && (
+              <div className="bg-white rounded-2xl p-8 border border-primary-200 shadow-sm">
+                <p className="text-gray-700 whitespace-pre-line">{chapterData.content.letterText}</p>
+              </div>
+            )}
+
+            {/* Sections with various formats */}
+            {chapterData.content.sections?.map((section: any, index: number) => (
               <div key={index} className="bg-white rounded-2xl p-8 border border-primary-200 shadow-sm">
                 <h3 className="text-xl font-semibold text-primary-900 mb-4">
                   {section.title}
                 </h3>
-                <ul className="space-y-2">
-                  {section.items?.map((item: string, i: number) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary-400 flex-shrink-0 mt-2" />
-                      <span className="text-gray-700">{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                
+                {/* Content text */}
+                {section.content && (
+                  <p className="text-gray-700 mb-4 whitespace-pre-line">{section.content}</p>
+                )}
+                
+                {/* Conditions list */}
+                {section.conditions && (
+                  <ul className="space-y-2">
+                    {section.conditions.map((item: string, i: number) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary-400 flex-shrink-0 mt-2" />
+                        <span className="text-gray-700">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                
+                {/* Format and example */}
+                {section.format && (
+                  <div className="space-y-3">
+                    <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                      <p className="text-sm font-semibold text-gray-600 mb-2">Format:</p>
+                      <pre className="text-sm text-gray-800 whitespace-pre-wrap font-mono">{section.format}</pre>
+                    </div>
+                    {section.example && (
+                      <div className="bg-primary-50 p-4 rounded-lg border border-primary-200">
+                        <p className="text-sm font-semibold text-primary-700 mb-2">Example:</p>
+                        <pre className="text-sm text-gray-800 whitespace-pre-wrap font-mono">{section.example}</pre>
+                      </div>
+                    )}
+                  </div>
+                )}
+                
+                {/* Steps */}
+                {section.steps && (
+                  <ul className="space-y-2">
+                    {section.steps.map((step: string, i: number) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <div className="w-6 h-6 rounded-full bg-primary-100 text-primary-700 flex items-center justify-center text-sm font-semibold flex-shrink-0">
+                          {i + 1}
+                        </div>
+                        <span className="text-gray-700 pt-0.5">{step}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                
+                {/* Do/Don't lists */}
+                {section.do && (
+                  <div className="grid md:grid-cols-2 gap-6 mt-4">
+                    <div>
+                      <h4 className="text-lg font-semibold text-green-700 mb-3">✓ Do:</h4>
+                      <ul className="space-y-2">
+                        {section.do.map((item: string, i: number) => (
+                          <li key={i} className="flex items-start gap-2">
+                            <span className="text-green-600 flex-shrink-0">✓</span>
+                            <span className="text-gray-700">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    {section.dont && (
+                      <div>
+                        <h4 className="text-lg font-semibold text-red-700 mb-3">✗ Don't:</h4>
+                        <ul className="space-y-2">
+                          {section.dont.map((item: string, i: number) => (
+                            <li key={i} className="flex items-start gap-2">
+                              <span className="text-red-600 flex-shrink-0">✗</span>
+                              <span className="text-gray-700">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                )}
+                
+                {/* Items list */}
+                {section.items && (
+                  <ul className="space-y-2">
+                    {section.items.map((item: string, i: number) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary-400 flex-shrink-0 mt-2" />
+                        <span className="text-gray-700">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
+
+            {/* Direct sections (section1, section2, etc. for Breath Letter) */}
+            {['section1', 'section2', 'section3'].map((key) => {
+              const section = chapterData.content[key];
+              if (!section) return null;
+              
+              return (
+                <div key={key} className="bg-white rounded-2xl p-8 border border-primary-200 shadow-sm">
+                  <h3 className="text-xl font-semibold text-primary-900 mb-4">
+                    {section.title}
+                  </h3>
+                  <p className="text-gray-700 mb-4 whitespace-pre-line">{section.content}</p>
+                  {section.conditions && (
+                    <ul className="space-y-2">
+                      {section.conditions.map((item: string, i: number) => (
+                        <li key={i} className="flex items-start gap-3">
+                          <div className="w-1.5 h-1.5 rounded-full bg-primary-400 flex-shrink-0 mt-2" />
+                          <span className="text-gray-700">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              );
+            })}
           </div>
         )}
 
