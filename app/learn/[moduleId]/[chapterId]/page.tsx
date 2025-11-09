@@ -174,25 +174,18 @@ export default function ChapterPage({
             )}
 
             {/* Story */}
-            {chapterData.phase1_prime.story && (
+            {chapterData.phase1_prime.story?.content && (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 className="bg-gradient-to-br from-primary-50 to-sacred-violet/10 rounded-3xl p-8 md:p-12 border border-primary-100"
               >
                 <div className="prose prose-lg max-w-none">
-                  {(() => {
-                    // Handle both story.content (object) and story (string) formats
-                    const storyText = typeof chapterData.phase1_prime.story === 'string' 
-                      ? chapterData.phase1_prime.story 
-                      : chapterData.phase1_prime.story.content;
-                    
-                    return storyText.split('\n\n').map((paragraph: string, i: number) => (
-                      <p key={i} className="text-gray-700 leading-relaxed mb-4 last:mb-0">
-                        {paragraph}
-                      </p>
-                    ));
-                  })()}
+                  {chapterData.phase1_prime.story.content.split('\n\n').map((paragraph: string, i: number) => (
+                    <p key={i} className="text-gray-700 leading-relaxed mb-4 last:mb-0">
+                      {paragraph}
+                    </p>
+                  ))}
                 </div>
               </motion.div>
             )}

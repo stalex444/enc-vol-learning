@@ -3,21 +3,19 @@
   "moduleId": "01-foundation",
   "title": "Practical Preparation & Essentials",
   "estimatedTime": "10 min",
-  
   "phase1_prime": {
     "breathing": {
       "intro": "This chapter is about readiness. Being prepared in the practical realm.",
       "instructions": "Not just spiritually ready. Logistically ready. Practically ready. Fully ready."
     },
-    
-    "story": "Jessica's first event as a volunteer almost didn't happen.\n\nShe'd completed the training. Felt spiritually prepared. Excited to serve. She booked her flight, reserved her hotel, packed her bags.\n\nDay 0, she arrived at the venue for the volunteer briefing. The Team Lead asked: 'Did everyone join the Telegram group?'\n\nJessica froze. Telegram group? She'd never downloaded Telegram. Didn't know there was a group to join.\n\nShe scrambled to download the app during the briefing. Tried to get the invite link. Missed half the meeting getting set up. Started the event already behind, already stressed.\n\nDay 1, Registration Day. She was assigned to check-in desk. 'Do you have the volunteer checklist?' her Team Lead asked.\n\n'Checklist?' Jessica had read the manual but somehow missed the checklist section. She didn't know she was supposed to familiarize herself with registration workflow. Didn't know what questions to expect. Hadn't reviewed the FAQs.\n\nShe fumbled through the day. Well-intentioned but unprepared. Every question took longer than it should. Every task required re-explanation. She felt like she was letting everyone down.\n\nThat night, exhausted and discouraged, she found the volunteer checklist in the manual. Read it fully. Realized everything she'd missed.\n\nShe spent 30 minutes that night doing what she should have done before arriving:\n- Checked Telegram for all pre-event posts\n- Downloaded the Making Your Mind Matter app\n- Reviewed the registration workflow\n- Read the FAQs\n- Familiarized herself with the venue layout\n\nDay 2, she showed up different. Prepared. Confident. Ready.\n\nShe still had lots to learn. But she wasn't scrambling with basics. She could focus on serving, not on catching up.\n\nAfter the event, she told her Group Lead: 'I learned the hard way—spiritual readiness isn't enough. You need practical preparation. Not instead of presence. Alongside it. Both matter.'\n\nHer second event? She completed the checklist two weeks before arriving. Downloaded everything. Reviewed everything. Showed up Day 0 fully ready.\n\nAnd she served from overflow, not from scrambling to catch up.",
-    
+    "story": {
+      "content": "Jessica's first event as a volunteer almost didn't happen.\n\nShe'd completed the training. Felt spiritually prepared. Excited to serve. She booked her flight, reserved her hotel, packed her bags.\n\nDay 0, she arrived at the venue for the volunteer briefing. The Team Lead asked: 'Did everyone join the Telegram group?'\n\nJessica froze. Telegram group? She'd never downloaded Telegram. Didn't know there was a group to join.\n\nShe scrambled to download the app during the briefing. Tried to get the invite link. Missed half the meeting getting set up. Started the event already behind, already stressed.\n\nDay 1, Registration Day. She was assigned to check-in desk. 'Do you have the volunteer checklist?' her Team Lead asked.\n\n'Checklist?' Jessica had read the manual but somehow missed the checklist section. She didn't know she was supposed to familiarize herself with registration workflow. Didn't know what questions to expect. Hadn't reviewed the FAQs.\n\nShe fumbled through the day. Well-intentioned but unprepared. Every question took longer than it should. Every task required re-explanation. She felt like she was letting everyone down.\n\nThat night, exhausted and discouraged, she found the volunteer checklist in the manual. Read it fully. Realized everything she'd missed.\n\nShe spent 30 minutes that night doing what she should have done before arriving:\n- Checked Telegram for all pre-event posts\n- Downloaded the Making Your Mind Matter app\n- Reviewed the registration workflow\n- Read the FAQs\n- Familiarized herself with the venue layout\n\nDay 2, she showed up different. Prepared. Confident. Ready.\n\nShe still had lots to learn. But she wasn't scrambling with basics. She could focus on serving, not on catching up.\n\nAfter the event, she told her Group Lead: 'I learned the hard way—spiritual readiness isn't enough. You need practical preparation. Not instead of presence. Alongside it. Both matter.'\n\nHer second event? She completed the checklist two weeks before arriving. Downloaded everything. Reviewed everything. Showed up Day 0 fully ready.\n\nAnd she served from overflow, not from scrambling to catch up."
+    },
     "whyThisMatters": {
       "quote": "Preparation is the foundation of spontaneity.",
       "author": "Dr. Joe Dispenza",
       "content": "You can be spiritually ready, heart-centered, and devoted to service—and still create problems for yourself and your team if you're not practically prepared.\n\n**Why practical preparation matters:**\n\n**1. You serve better when grounded**\nIf you're scrambling to figure out basics (Where's Telegram? How do I access Smartsheet? What's my hotel reservation?), you're not present. You're in survival mode. You can't hold space for others when you're drowning in logistics.\n\n**2. You create less stress for your team**\nWhen you show up unprepared, others have to stop their work to help you catch up. Every question you ask that's answered in the checklist is time someone else can't spend serving participants.\n\n**3. You model responsibility**\nParticipants are watching. If you're disorganized, flustered, unprepared—that's the energy they receive. If you're grounded, prepared, capable—that's what they feel.\n\n**4. You enjoy the experience more**\nServing from scrambling is stressful. Serving from readiness is joyful. The same tasks feel completely different when you're prepared versus when you're catching up.\n\n**This chapter covers:**\n• Complete volunteer checklist (before event and onsite)\n• Essential items to bring\n• How to handle gifts for Dr. Joe\n• Final preparation steps\n• What to do when you arrive\n\n**This isn't busy work. This is the foundation that allows you to serve from overflow rather than depletion.**\n\nDon't skip the basics. Don't assume you'll figure it out. Don't wait until you arrive to prepare.\n\nDo the checklist. Bring the essentials. Show up ready.\n\nThen you can serve from presence, not from panic."
     },
-    
     "learningObjectives": [
       "Complete the full volunteer checklist before arriving at the event",
       "Know what essential items to bring and why each matters",
@@ -25,7 +23,6 @@
       "Be practically prepared so you can serve from presence, not scrambling"
     ]
   },
-
   "phase2_immerse": {
     "sections": [
       {
@@ -50,7 +47,6 @@
       }
     ]
   },
-
   "phase3_integrate": {
     "quiz": [
       {
@@ -155,7 +151,6 @@
       }
     ]
   },
-
   "phase4_anchor": {
     "summary": {
       "keyPoints": [
@@ -169,12 +164,10 @@
       ],
       "integration": "You now have the complete practical foundation.\n\nYou know what to do before arriving. What to bring. What to do when you get there. How to stay prepared throughout the event. How to handle special situations like gifts.\n\nThis isn't busy work. Every item on these checklists serves your capacity to show up fully, serve effectively, and stay grounded through long, intense days.\n\nThe volunteers who struggle most are the ones who skip these basics. The volunteers who thrive handle fundamentals so they can focus on presence, service, and transformation.\n\nDo the checklist. Bring the essentials. Follow the protocols. Show up ready.\n\nThen you can serve from overflow, not from scrambling to catch up.\n\nModule 1 complete. Foundation fully established—sacred nature of service, agreements that protect it, event structure and communications, and practical preparation.\n\nYou're ready for Module 2: Communication & Support."
     },
-    
     "closingQuote": {
       "text": "Preparation is the foundation of spontaneity.",
       "author": "Dr. Joe Dispenza"
     },
-    
     "nextChapter": {
       "title": "Understanding the Three Types of Support",
       "preview": "Learning when and how to request Medical, Emotional, and Meditation Assistance"
