@@ -57,52 +57,77 @@
     
     "quiz": [
       {
-        "question": "A participant approaches you in tears, asking to speak with Dr. Joe about a personal healing breakthrough they want to share. What's your response?",
+        "question": "You're on shift during a meditation and notice a participant sitting alone in the hallway, visibly upset. You feel uncertain about what to do. According to this chapter's teachings, what's the most important first step?",
         "options": [
           {
-            "text": "Kindly explain that Dr. Joe doesn't take personal requests, and guide them to submit their story through the website or Customer Care",
+            "text": "Take three coherent breaths to ground yourself before approaching",
             "isCorrect": true,
-            "feedback": "Exactly right. You're honoring Dr. Joe's boundaries with compassion. You might say: 'I can see this means so much to you. The website has a process for sharing transformation stories, and Customer Care can help guide you there.' You're being clear and kind—holding the boundary while honoring their experience."
+            "feedback": "Exactly. Remember Sarah's story? When she paused to breathe and ground herself, she could respond from coherence instead of panic. Your regulated nervous system becomes an organizing force. When you're centered, you can serve from clarity. Then you can assess the situation and decide whether to approach, call for support, or both."
           },
           {
-            "text": "Bring them to Dr. Joe during the break and explain that they just want to share gratitude",
+            "text": "Immediately approach and ask what's wrong",
             "isCorrect": false,
-            "feedback": "This puts Dr. Joe in an impossible position and crosses the boundary you're here to protect. Remember: he maintains these boundaries to preserve his energy for teaching. Even gratitude, when it comes from 1,500 people, becomes overwhelming. The kind response is to honor his space and direct them to the proper channel."
+            "feedback": "Your heart is in the right place, but rushing in from a scattered state won't serve them. Remember: nervous systems communicate. If you approach while anxious, they'll feel that energy. Take three breaths first. Ground yourself. Then approach from presence, not urgency. This is what the training prepares you for."
           },
           {
-            "text": "Take their message in writing and promise to deliver it to Dr. Joe personally",
+            "text": "Walk past them to avoid making them uncomfortable",
             "isCorrect": false,
-            "feedback": "While your heart is in the right place, this bypasses the established protocol and creates an expectation you can't fulfill. Dr. Joe receives thousands of messages. There's a system for handling them fairly and sustainably. Guide them to that system—don't create a special exception."
+            "feedback": "This isn't about avoiding discomfort—it's about holding space. Someone in distress needs to be seen. The question is how you approach. Ground yourself first, then offer gentle presence. 'I notice you're having a difficult time. Would some company help?' Sometimes just being seen changes everything."
           },
           {
-            "text": "Tell them you're not allowed to help with that and walk away",
+            "text": "Immediately radio for emotional support without approaching",
             "isCorrect": false,
-            "feedback": "The words might be technically correct, but the energy is all wrong. We serve from the heart. A better approach: 'I understand how meaningful this is for you. Let me walk you to Customer Care—they can help you share your story through the proper channel so it actually reaches Dr. Joe.' Feel the difference?"
+            "feedback": "You might need to call for support, but don't skip the human connection. Ground yourself, approach with gentle presence, assess the situation. They may just need a moment of being seen. Or they may need more support—you'll know once you're present with them. Trust your coherent response."
           }
         ]
       },
       {
-        "question": "Your close friend from home asks what happens during the meditations and if there are any 'transformation stories' you can share. How do you respond?",
+        "question": "What does it mean that 'your inner state affects the field' in the context of volunteer service?",
         "options": [
           {
-            "text": "Share your own experience and general observations, but keep specific participant stories confidential",
+            "text": "When you're in coherence, your regulated nervous system becomes a beacon that others' nervous systems can synchronize to",
             "isCorrect": true,
-            "feedback": "Well done. You can share your own journey and what it feels like to witness the work—that's always yours to tell. You might say: 'The meditations are profound. I witnessed deep transformation, but the specific stories aren't mine to share. What I can say is: it changed me too.' This honors confidentiality while staying connected to your friend."
+            "feedback": "Yes! This is neuroscience and quantum physics. When you show up grounded and present, participants feel safe. Your coherence creates an organizing force in the field. This is why your preparation matters—you're not just learning protocols, you're training yourself to hold a frequency that serves everyone."
           },
           {
-            "text": "Tell them about a powerful healing moment but change the person's name and details to protect their identity",
+            "text": "You need to maintain a positive attitude at all times so participants don't sense negativity",
             "isCorrect": false,
-            "feedback": "Changing names doesn't make it okay. The participant's story isn't yours to share, even anonymously. These moments are sacred. What you witnessed in that container stays in that container. The vulnerability people show during these retreats is based on trust—trust that their private journey remains private."
+            "feedback": "This isn't about forcing positivity or suppressing your humanity. It's about coherence—being present, grounded, and regulated. You can have a challenging moment and still be coherent. The key is: are you aware of your state? Can you breathe and center yourself? That's what affects the field, not fake positivity."
           },
           {
-            "text": "Explain that everything is confidential and you can't discuss any participant experiences or event details",
+            "text": "Your personal energy determines whether participants will have breakthroughs during meditations",
+            "isCorrect": false,
+            "feedback": "You're not responsible for participants' transformations—they are. Your role is to hold the space steady so they can do their work. You contribute to the container, but you're not the cause of their healing. Stay humble. Stay present. Hold the space. That's the service."
+          },
+          {
+            "text": "If you're having a bad day, you should avoid interacting with participants",
+            "isCorrect": false,
+            "feedback": "Being human doesn't disqualify you from service. The question is: can you acknowledge what you're feeling and still ground yourself? Can you take three breaths and return to presence? That's the practice. You don't need to be perfect—you need to be present. And when you can't be, ask for support."
+          }
+        ]
+      },
+      {
+        "question": "According to this chapter, what is the core agreement between volunteers and participants?",
+        "options": [
+          {
+            "text": "Participants do their inner work; volunteers hold the outer space",
             "isCorrect": true,
-            "feedback": "Perfect. Clear, firm, and kind. Confidentiality isn't negotiable—not even for close friends. You're protecting the sacred space and honoring every person's vulnerability. This is integrity. Your friend may not understand at first, but they'll respect your commitment to the agreement you made."
+            "feedback": "Perfect. This is the sacred agreement. They come to transform. You come to create the container that makes transformation possible. They surrender into vulnerability. You stay grounded and ready. They do the deep work. You watch the doors, monitor the room, respond when needed. This partnership is what makes these retreats possible."
           },
           {
-            "text": "Share stories but only with people you trust completely not to repeat them",
+            "text": "Volunteers help participants have breakthrough experiences during meditations",
             "isCorrect": false,
-            "feedback": "Trust isn't the issue—consent is. No participant gave permission for their story to be shared outside the event, regardless of who you're telling. This is a non-negotiable boundary. The retreat is a sanctuary, and you're the guardian of what happens within it. Once you share, you can't control where it goes."
+            "feedback": "No—participants create their own breakthroughs. You're not there to facilitate their inner work. You're there to hold the space safe so they can do that work themselves. Don't confuse your role. You're the container, not the catalyst. That's a crucial distinction."
+          },
+          {
+            "text": "Participants follow the rules; volunteers enforce them",
+            "isCorrect": false,
+            "feedback": "This framing misses the heart of the work. You're not an enforcer—you're a space holder. Yes, there are protocols and boundaries, but you maintain them with gentle authority and compassion, not rigid enforcement. You serve from the heart, not from control. Feel the difference?"
+          },
+          {
+            "text": "Volunteers make sure participants have everything they need for a comfortable experience",
+            "isCorrect": false,
+            "feedback": "Comfort isn't the goal—transformation is. Sometimes the most profound breakthroughs come from discomfort. Your role isn't to make everything easy; it's to make the space safe. Safe for vulnerability. Safe for release. Safe for the unexpected. That's very different from comfortable."
           }
         ]
       }
@@ -113,11 +138,11 @@
     "summary": {
       "keyPoints": [
         "You're not just supporting an event—you're holding sacred space for transformation",
-        "Your regulated nervous system becomes an organizing force for the field",
-        "Confidentiality protects the container and honors every participant's vulnerability",
-        "Dr. Joe's boundaries exist to preserve his capacity to serve at the highest level",
-        "You lead by example—embodying presence, coherence, and groundedness",
-        "Protocols aren't restrictions—they're tools that empower you to act with clarity when it matters most"
+        "Your regulated nervous system becomes an organizing force for the field—when you're in coherence, others' nervous systems synchronize to yours",
+        "The core agreement: participants do their inner work; volunteers hold the outer space",
+        "Ground yourself first (three coherent breaths) before responding to someone in distress—respond from coherence, not panic",
+        "Your preparation matters because you're training yourself to hold a frequency that serves everyone",
+        "Service means holding the container steady so participants can surrender into vulnerability and do their deep work"
       ],
       "integration": "Take a moment. Feel what you've just absorbed. This isn't just information—it's an invitation into a way of being.\n\nWhen you show up at the retreat, you'll carry this with you: the understanding that your presence matters. That your groundedness serves. That your commitment to these principles creates safety for everyone.\n\nYou are being entrusted with something precious. Thousands of hearts, opening. Thousands of lives, transforming. And you—steady, prepared, present—holding the space for it all to unfold.\n\nThis is sacred work. And you're ready for it."
     },
