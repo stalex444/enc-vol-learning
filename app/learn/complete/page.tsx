@@ -173,12 +173,10 @@ All modules completed successfully.
                   </button>
                 </div>
 
-                <div className="mt-8 p-4 bg-amber-50 border border-amber-200 rounded-lg">
-                  <p className="text-sm text-amber-900 text-center">
-                    <strong>Next Step:</strong> Copy your confirmation and send it to{' '}
-                    <a href="mailto:crew@encephalon.com" className="underline font-semibold">
-                      crew@encephalon.com
-                    </a>
+                <div className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                  <p className="text-sm text-blue-900 text-center">
+                    <strong>Next Step:</strong> Copy your confirmation and send it via <strong>Telegram</strong> to{' '}
+                    <span className="font-bold">Nadja Guiffrida</span>
                   </p>
                 </div>
               </div>
