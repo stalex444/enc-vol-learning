@@ -379,11 +379,43 @@ export default function ChapterPage({
                 </h3>
                 
                 <div className="prose prose-lg max-w-none">
-                  {section.content.split('\n\n').map((paragraph: string, i: number) => (
-                    <p key={i} className="text-gray-700 leading-relaxed mb-4">
-                      {paragraph}
-                    </p>
-                  ))}
+                  {section.content.split('\n\n').map((paragraph: string, i: number) => {
+                    // Check if this is a bullet list
+                    if (paragraph.includes('\n• ') || paragraph.includes('\n. ')) {
+                      const items = paragraph.split(/\n[•.] /).filter(item => item.trim());
+                      return (
+                        <ul key={i} className="list-disc ml-6 space-y-2 mb-6">
+                          {items.map((item, j) => {
+                            // Render bold text in list items
+                            const parts = item.split(/(\*\*.*?\*\*)/g);
+                            return (
+                              <li key={j} className="text-gray-700 leading-relaxed">
+                                {parts.map((part, k) => {
+                                  if (part.startsWith('**') && part.endsWith('**')) {
+                                    return <strong key={k}>{part.slice(2, -2)}</strong>;
+                                  }
+                                  return part;
+                                })}
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      );
+                    }
+                    
+                    // Regular paragraph with bold support
+                    const parts = paragraph.split(/(\*\*.*?\*\*)/g);
+                    return (
+                      <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                        {parts.map((part, j) => {
+                          if (part.startsWith('**') && part.endsWith('**')) {
+                            return <strong key={j} className="font-semibold">{part.slice(2, -2)}</strong>;
+                          }
+                          return part;
+                        })}
+                      </p>
+                    );
+                  })}
                 </div>
 
                 {section.pullQuote && (
