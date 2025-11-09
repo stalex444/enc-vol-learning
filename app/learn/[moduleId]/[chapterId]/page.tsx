@@ -380,22 +380,58 @@ export default function ChapterPage({
                 
                 <div className="prose prose-lg max-w-none">
                   {section.content.split('\n\n').map((paragraph: string, i: number) => {
-                    // Check if this is a bullet list
+                    // Check if paragraph contains inline bullets (like "text: • item • item")
+                    if (paragraph.match(/[:.]\s*•/)) {
+                      // Split into text before bullets and bullet items
+                      const match = paragraph.match(/(.*?)[:.]\s*•\s*([\s\S]+)/);
+                      if (match) {
+                        const [, intro, bulletText] = match;
+                        const items = bulletText.split(/\s*•\s*/).filter(item => item.trim());
+                        
+                        return (
+                          <div key={i} className="mb-6">
+                            {intro && (
+                              <p className="text-gray-700 leading-relaxed mb-3">
+                                {intro.split(/(\*\*.*?\*\*)/g).map((part, j) => 
+                                  part.startsWith('**') && part.endsWith('**') 
+                                    ? <strong key={j} className="font-semibold">{part.slice(2, -2)}</strong>
+                                    : part
+                                )}:
+                              </p>
+                            )}
+                            <ul className="list-disc ml-6 space-y-2">
+                              {items.map((item, j) => {
+                                const parts = item.split(/(\*\*.*?\*\*)/g);
+                                return (
+                                  <li key={j} className="text-gray-700 leading-relaxed">
+                                    {parts.map((part, k) => 
+                                      part.startsWith('**') && part.endsWith('**')
+                                        ? <strong key={k} className="font-semibold">{part.slice(2, -2)}</strong>
+                                        : part
+                                    )}
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                        );
+                      }
+                    }
+                    
+                    // Check if this is a bullet list with newlines
                     if (paragraph.includes('\n• ') || paragraph.includes('\n. ')) {
                       const items = paragraph.split(/\n[•.] /).filter(item => item.trim());
                       return (
                         <ul key={i} className="list-disc ml-6 space-y-2 mb-6">
                           {items.map((item, j) => {
-                            // Render bold text in list items
                             const parts = item.split(/(\*\*.*?\*\*)/g);
                             return (
                               <li key={j} className="text-gray-700 leading-relaxed">
-                                {parts.map((part, k) => {
-                                  if (part.startsWith('**') && part.endsWith('**')) {
-                                    return <strong key={k}>{part.slice(2, -2)}</strong>;
-                                  }
-                                  return part;
-                                })}
+                                {parts.map((part, k) => 
+                                  part.startsWith('**') && part.endsWith('**')
+                                    ? <strong key={k} className="font-semibold">{part.slice(2, -2)}</strong>
+                                    : part
+                                )}
                               </li>
                             );
                           })}
@@ -407,12 +443,11 @@ export default function ChapterPage({
                     const parts = paragraph.split(/(\*\*.*?\*\*)/g);
                     return (
                       <p key={i} className="text-gray-700 leading-relaxed mb-4">
-                        {parts.map((part, j) => {
-                          if (part.startsWith('**') && part.endsWith('**')) {
-                            return <strong key={j} className="font-semibold">{part.slice(2, -2)}</strong>;
-                          }
-                          return part;
-                        })}
+                        {parts.map((part, j) => 
+                          part.startsWith('**') && part.endsWith('**')
+                            ? <strong key={j} className="font-semibold">{part.slice(2, -2)}</strong>
+                            : part
+                        )}
                       </p>
                     );
                   })}
