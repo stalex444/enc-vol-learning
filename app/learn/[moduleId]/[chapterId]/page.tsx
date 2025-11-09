@@ -401,6 +401,32 @@ export default function ChapterPage({
           </div>
         )}
 
+        {/* Spiritual Reflection Section (if exists in phase2_immerse) */}
+        {chapterData.phase2_immerse?.reflection && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mb-16"
+          >
+            <div className="bg-gradient-to-br from-sacred-violet/10 via-primary-50 to-white rounded-3xl p-8 md:p-12 border border-primary-200 shadow-sm">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-1 h-12 bg-gradient-to-b from-sacred-violet to-primary-600 rounded-full" />
+                <h2 className="text-3xl font-light text-primary-900">
+                  {chapterData.phase2_immerse.reflection.title}
+                </h2>
+              </div>
+              
+              <div className="prose prose-lg max-w-none">
+                {chapterData.phase2_immerse.reflection.content.split('\n\n').map((paragraph: string, i: number) => (
+                  <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        )}
+
         {/* Phase 3: Integrate - Reflection (if exists) */}
         {chapterData.phase3_integrate?.reflection && (
           <div className="mb-16">
