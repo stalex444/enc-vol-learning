@@ -7,6 +7,11 @@
   
   "chapters": [
     {
+      "id": "00",
+      "title": "How to Use These Reference Tools",
+      "description": "Introduction to quick reference materials and the practice of practical support"
+    },
+    {
       "id": "01",
       "title": "Group Lead Cheat Sheet",
       "description": "Complete reference for Group Lead responsibilities"
