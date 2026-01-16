@@ -8,61 +8,52 @@
   "content": {
     "sections": [
       {
-        "title": "Daily Reset Process",
-        "steps": [
-          {
-            "number": 1,
-            "text": "Check Telegram Room Reset Instructions for your section's requirements"
-          },
-          {
-            "number": 2,
-            "text": "Bring any OWN or HD chairs (permanent white tags) with you to new section"
-          },
-          {
-            "number": 3,
-            "text": "Go to your NEW section (not old one)"
-          },
-          {
-            "number": 4,
-            "text": "If DEPOSITING: Remove excess chairs from NEW section, remove reserved signs first, bring to central bank, post: '[Color] deposited [#]'"
-          },
-          {
-            "number": 5,
-            "text": "Place reserved signs in remaining chairs"
-          },
-          {
-            "number": 6,
-            "text": "If PICKING UP: Get chairs from central bank ONLY (never from walls or other sections), add to section, maintain aisle integrity, place reserved signs"
-          },
-          {
-            "number": 7,
-            "text": "Verify chairs are open, locked, stable"
-          },
-          {
-            "number": 8,
-            "text": "Count total, post: '[Color] [final#]' - Must match Room Reset Lead's posted number. If doesn't match, contact Lead immediately"
-          }
+        "title": "Daily Reset Process - Step by Step",
+        "items": [
+          "1. Check Telegram Room Reset Instructions for your section's requirements",
+          "2. Bring any OWN or HD chairs (permanent white tags) with you to new section",
+          "3. Go to your NEW section (not old one)",
+          "4. If DEPOSITING: Remove excess chairs from NEW section, remove reserved signs first, bring to central bank, post: '[Color] deposited [#]'",
+          "5. Place reserved signs in remaining chairs",
+          "6. If PICKING UP: Get chairs from central bank ONLY (never from walls or other sections), add to section, maintain aisle integrity, place reserved signs",
+          "7. Verify chairs are open, locked, stable",
+          "8. Count total, post: '[Color] [final#]' - Must match Room Reset Lead's posted number"
         ]
       },
       {
-        "title": "Critical Rules",
-        "rules": [
-          "Trust posted numbers",
-          "NEVER write reserved signs yourself",
-          "Only take from central bank",
-          "Over-communicate early",
-          "Verify chairs locked each morning"
+        "title": "Critical Rules - Never Break These",
+        "items": [
+          "NEVER take chairs from venue walls or other sections—only from central bank",
+          "NEVER move OWN or HD chairs (permanent white tags)—they stay with participant",
+          "ALWAYS remove reserved signs before depositing chairs",
+          "ALWAYS verify chair is open, locked, stable before counting it",
+          "ALWAYS post your final count—it must match Room Reset Lead's number",
+          "Chair count errors cause chaos—double-check everything"
         ]
       },
       {
-        "title": "Special Notes",
-        "notes": [
-          "OWN = participant's personal chair (white tag)",
-          "HD = Heavy Duty chair for extra support (white tag)",
-          "Reserved signs removed last lecture before CH",
-          "If dinner before reset: deposit chairs first, then eat"
+        "title": "Common Mistakes to Avoid",
+        "items": [
+          "Going to OLD section instead of NEW section",
+          "Taking chairs from walls (creates venue issues)",
+          "Moving OWN/HD chairs that should stay with participant",
+          "Depositing chairs with reserved signs still in them",
+          "Not verifying chair stability (creates safety issues)",
+          "Posting wrong count or no count at all"
+        ]
+      },
+      {
+        "title": "Quick Troubleshooting",
+        "items": [
+          "Count doesn't match Room Reset Lead? Recount immediately and report discrepancy",
+          "Central bank empty but you need chairs? Check Telegram—other sections may be depositing soon",
+          "Participant's OWN chair won't open/lock? Report to Medical—they need a replacement",
+          "Confused about which section is yours? Check seating map posted in Telegram",
+          "Reserved signs missing? Report to Group Lead—replacements available"
         ]
       }
-    ]
+    ],
+    
+    "sacredReminder": "🦋 Sacred Reminder: Gravity chair management is energy stewardship. Every chair placed with precision creates safety. Every count verified with integrity protects coherence."
   }
 }
