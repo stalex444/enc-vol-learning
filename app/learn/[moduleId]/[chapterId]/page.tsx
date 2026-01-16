@@ -272,6 +272,360 @@ export default function ChapterPage({
           </div>
         )}
 
+        {/* Introduction/Conclusion Content */}
+        {chapterData.type === 'introduction' && chapterData.content && (
+          <div className="space-y-12 mb-16">
+            {/* Opening Reflection */}
+            {chapterData.content.openingReflection && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-br from-primary-50 to-sacred-violet/10 rounded-3xl p-8 md:p-12 border border-primary-100"
+              >
+                <h2 className="text-2xl font-light text-primary-900 mb-6">
+                  {chapterData.content.openingReflection.title}
+                </h2>
+                <div className="prose prose-lg max-w-none">
+                  {chapterData.content.openingReflection.content.split('\n\n').map((paragraph: string, i: number) => {
+                    const parts = paragraph.split(/(\*\*.*?\*\*|\*.*?\*)/g);
+                    return (
+                      <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                        {parts.map((part, j) => {
+                          if (part.startsWith('**') && part.endsWith('**')) {
+                            return <strong key={j} className="font-semibold">{part.slice(2, -2)}</strong>;
+                          } else if (part.startsWith('*') && part.endsWith('*') && !part.startsWith('**')) {
+                            return <em key={j}>{part.slice(1, -1)}</em>;
+                          }
+                          return part;
+                        })}
+                      </p>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            )}
+
+            {/* Acknowledgment Sections */}
+            {chapterData.content.acknowledgment && (
+              <div className="space-y-8">
+                <div className="flex items-center gap-3">
+                  <div className="w-1 h-12 bg-gradient-to-b from-amber-400 to-amber-600 rounded-full" />
+                  <h2 className="text-3xl font-light text-primary-900">
+                    {chapterData.content.acknowledgment.title}
+                  </h2>
+                </div>
+                
+                {chapterData.content.acknowledgment.introduction && (
+                  <p className="text-lg text-gray-700">{chapterData.content.acknowledgment.introduction}</p>
+                )}
+
+                {chapterData.content.acknowledgment.sections?.map((section: any, index: number) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    className="bg-white rounded-2xl p-8 border border-primary-200 shadow-sm"
+                  >
+                    <h3 className="text-xl font-semibold text-primary-900 mb-4">
+                      {section.subtitle}
+                    </h3>
+                    <div className="prose prose-lg max-w-none">
+                      {section.content.split('\n\n').map((paragraph: string, i: number) => {
+                        // Handle bullet lists
+                        if (paragraph.startsWith('•') || paragraph.includes('\n•')) {
+                          const items = paragraph.split('\n').filter((line: string) => line.trim().startsWith('•'));
+                          return (
+                            <ul key={i} className="space-y-2 mb-4">
+                              {items.map((item: string, j: number) => (
+                                <li key={j} className="flex items-start gap-3">
+                                  <div className="w-1.5 h-1.5 rounded-full bg-primary-400 flex-shrink-0 mt-2" />
+                                  <span className="text-gray-700">{item.replace(/^•\s*/, '')}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          );
+                        }
+                        
+                        const parts = paragraph.split(/(\*\*.*?\*\*|\*.*?\*)/g);
+                        return (
+                          <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                            {parts.map((part, j) => {
+                              if (part.startsWith('**') && part.endsWith('**')) {
+                                return <strong key={j} className="font-semibold">{part.slice(2, -2)}</strong>;
+                              } else if (part.startsWith('*') && part.endsWith('*') && !part.startsWith('**')) {
+                                return <em key={j}>{part.slice(1, -1)}</em>;
+                              }
+                              return part;
+                            })}
+                          </p>
+                        );
+                      })}
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            )}
+
+            {/* Transition */}
+            {chapterData.content.transition && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 md:p-12 border border-blue-100"
+              >
+                <h2 className="text-2xl font-light text-primary-900 mb-6">
+                  {chapterData.content.transition.title}
+                </h2>
+                <div className="prose prose-lg max-w-none">
+                  {chapterData.content.transition.content.split('\n\n').map((paragraph: string, i: number) => {
+                    const parts = paragraph.split(/(\*\*.*?\*\*|\*.*?\*)/g);
+                    return (
+                      <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                        {parts.map((part, j) => {
+                          if (part.startsWith('**') && part.endsWith('**')) {
+                            return <strong key={j} className="font-semibold">{part.slice(2, -2)}</strong>;
+                          } else if (part.startsWith('*') && part.endsWith('*') && !part.startsWith('**')) {
+                            return <em key={j}>{part.slice(1, -1)}</em>;
+                          }
+                          return part;
+                        })}
+                      </p>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            )}
+
+            {/* Truth Telling */}
+            {chapterData.content.truthTelling && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-white rounded-2xl p-8 md:p-12 border border-primary-200 shadow-sm"
+              >
+                <h2 className="text-2xl font-light text-primary-900 mb-6">
+                  {chapterData.content.truthTelling.title}
+                </h2>
+                <div className="prose prose-lg max-w-none">
+                  {chapterData.content.truthTelling.content.split('\n\n').map((paragraph: string, i: number) => {
+                    const parts = paragraph.split(/(\*\*.*?\*\*|\*.*?\*)/g);
+                    return (
+                      <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                        {parts.map((part, j) => {
+                          if (part.startsWith('**') && part.endsWith('**')) {
+                            return <strong key={j} className="font-semibold">{part.slice(2, -2)}</strong>;
+                          } else if (part.startsWith('*') && part.endsWith('*') && !part.startsWith('**')) {
+                            return <em key={j}>{part.slice(1, -1)}</em>;
+                          }
+                          return part;
+                        })}
+                      </p>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            )}
+
+            {/* Sacred Exchange */}
+            {chapterData.content.sacredExchange && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-br from-sacred-violet/10 via-primary-50 to-white rounded-3xl p-8 md:p-12 border border-primary-200"
+              >
+                <h2 className="text-2xl font-light text-primary-900 mb-6">
+                  {chapterData.content.sacredExchange.title}
+                </h2>
+                <div className="prose prose-lg max-w-none">
+                  {chapterData.content.sacredExchange.content.split('\n\n').map((paragraph: string, i: number) => {
+                    const parts = paragraph.split(/(\*\*.*?\*\*|\*.*?\*)/g);
+                    return (
+                      <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                        {parts.map((part, j) => {
+                          if (part.startsWith('**') && part.endsWith('**')) {
+                            return <strong key={j} className="font-semibold">{part.slice(2, -2)}</strong>;
+                          } else if (part.startsWith('*') && part.endsWith('*') && !part.startsWith('**')) {
+                            return <em key={j}>{part.slice(1, -1)}</em>;
+                          }
+                          return part;
+                        })}
+                      </p>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            )}
+
+            {/* Blessing */}
+            {chapterData.content.blessing && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 rounded-3xl p-8 md:p-12 border border-amber-200"
+              >
+                <h2 className="text-2xl font-light text-primary-900 mb-6 text-center">
+                  {chapterData.content.blessing.title}
+                </h2>
+                <div className="prose prose-lg max-w-none text-center">
+                  {chapterData.content.blessing.content.split('\n\n').map((paragraph: string, i: number) => {
+                    const parts = paragraph.split(/(\*\*.*?\*\*|\*.*?\*)/g);
+                    return (
+                      <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                        {parts.map((part, j) => {
+                          if (part.startsWith('**') && part.endsWith('**')) {
+                            return <strong key={j} className="font-semibold">{part.slice(2, -2)}</strong>;
+                          } else if (part.startsWith('*') && part.endsWith('*') && !part.startsWith('**')) {
+                            return <em key={j}>{part.slice(1, -1)}</em>;
+                          }
+                          return part;
+                        })}
+                      </p>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            )}
+
+            {/* Completion */}
+            {chapterData.content.completion && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-br from-primary-100 via-primary-50 to-white rounded-3xl p-8 md:p-12 border border-primary-300 shadow-lg"
+              >
+                <h2 className="text-3xl font-light text-primary-900 mb-8 text-center">
+                  {chapterData.content.completion.title}
+                </h2>
+                
+                {chapterData.content.completion.proclamation && (
+                  <div className="prose prose-lg max-w-none mb-8">
+                    {chapterData.content.completion.proclamation.split('\n\n').map((paragraph: string, i: number) => {
+                      // Handle checkmark lists
+                      if (paragraph.includes('✓')) {
+                        return (
+                          <div key={i} className="space-y-3 mb-6">
+                            {paragraph.split('\n').filter((line: string) => line.includes('✓')).map((line: string, j: number) => (
+                              <div key={j} className="flex items-start gap-3">
+                                <span className="text-green-600 flex-shrink-0">✓</span>
+                                <span className="text-gray-700">{line.replace('✓', '').trim()}</span>
+                              </div>
+                            ))}
+                          </div>
+                        );
+                      }
+                      
+                      const parts = paragraph.split(/(\*\*.*?\*\*)/g);
+                      return (
+                        <p key={i} className="text-gray-700 leading-relaxed mb-4 text-center">
+                          {parts.map((part, j) => 
+                            part.startsWith('**') && part.endsWith('**')
+                              ? <strong key={j} className="font-semibold">{part.slice(2, -2)}</strong>
+                              : part
+                          )}
+                        </p>
+                      );
+                    })}
+                  </div>
+                )}
+
+                {chapterData.content.completion.sendOff && (
+                  <div className="prose prose-lg max-w-none border-t border-primary-200 pt-8 mt-8">
+                    {chapterData.content.completion.sendOff.split('\n\n').map((paragraph: string, i: number) => {
+                      const parts = paragraph.split(/(\*\*.*?\*\*)/g);
+                      return (
+                        <p key={i} className="text-gray-700 leading-relaxed mb-4 text-center">
+                          {parts.map((part, j) => 
+                            part.startsWith('**') && part.endsWith('**')
+                              ? <strong key={j} className="font-semibold text-primary-800">{part.slice(2, -2)}</strong>
+                              : part
+                          )}
+                        </p>
+                      );
+                    })}
+                  </div>
+                )}
+              </motion.div>
+            )}
+
+            {/* Closing Quote */}
+            {chapterData.content.closingQuote && (
+              <div className="text-center py-8">
+                <blockquote className="text-2xl font-light italic text-gray-700 mb-4">
+                  "{chapterData.content.closingQuote.text}"
+                </blockquote>
+                <p className="text-primary-700 font-medium">
+                  — {chapterData.content.closingQuote.author}
+                </p>
+              </div>
+            )}
+
+            {/* Next Steps */}
+            {chapterData.content.nextSteps && (
+              <div className="space-y-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-1 h-12 bg-gradient-to-b from-primary-400 to-primary-600 rounded-full" />
+                  <h2 className="text-3xl font-light text-primary-900">
+                    {chapterData.content.nextSteps.title}
+                  </h2>
+                </div>
+                
+                {chapterData.content.nextSteps.introduction && (
+                  <p className="text-lg text-gray-700">{chapterData.content.nextSteps.introduction}</p>
+                )}
+
+                <div className="space-y-4">
+                  {chapterData.content.nextSteps.actions?.map((action: any, index: number) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      className="bg-white rounded-xl p-6 border border-primary-200 shadow-sm"
+                    >
+                      <div className="flex items-start gap-4">
+                        <div className="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0 text-primary-700 font-semibold">
+                          {index + 1}
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-primary-900 mb-1">
+                            {action.title || action.action}
+                          </h4>
+                          <p className="text-gray-600">{action.description}</p>
+                        </div>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Final Message */}
+            {chapterData.content.finalMessage && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="text-center py-12"
+              >
+                <div className="prose prose-lg max-w-none">
+                  {chapterData.content.finalMessage.content.split('\n\n').map((paragraph: string, i: number) => {
+                    const parts = paragraph.split(/(\*\*.*?\*\*)/g);
+                    return (
+                      <p key={i} className="text-xl text-gray-700 leading-relaxed mb-4">
+                        {parts.map((part, j) => 
+                          part.startsWith('**') && part.endsWith('**')
+                            ? <strong key={j} className="font-semibold text-primary-800">{part.slice(2, -2)}</strong>
+                            : part
+                        )}
+                      </p>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            )}
+          </div>
+        )}
+
         {/* Phase 1: Prime - Story & Why This Matters */}
         {chapterData.phase1_prime && (
           <div className="space-y-12 mb-16">
