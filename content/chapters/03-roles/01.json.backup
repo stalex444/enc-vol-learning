@@ -1,0 +1,194 @@
+{
+  "id": "01",
+  "moduleId": "03-roles",
+  "title": "Week Long Roles Overview",
+  "estimatedTime": "14 min",
+  "phase1_prime": {
+    "breathing": {
+      "intro": "This chapter shows you the architecture. How every role serves the whole.",
+      "instructions": "You're learning the system. Each role essential. All interconnected."
+    },
+    "story": {
+      "content": "Emma's first event as a volunteer. Day 0, the pre-event briefing.\n\nKelly, the Events Lead, stood at the front. 'You're about to see how 150 volunteers create an experience for 1,500 participants. Every role matters. Every person is essential.'\n\nShe pulled up a diagram on the screen. Circles and arrows connecting different colored boxes.\n\n'Group Leads coordinate their color sections—they're the heartbeat of each team. Door Leads manage flow and access—they're the gatekeepers. Healee Support Leads and Teams coordinate Coherence Healing—they're the logistics backbone. Greeters create the first impression—they're the welcome. Medical and Mental Health teams provide critical care—they're the safety net. Customer Care solves problems—they're the support hub.'\n\nEmma looked at the diagram. It was elegant. Nothing redundant. Nothing missing. Each role had clear responsibility. Each role connected to others.\n\n'This isn't a hierarchy,' Kelly continued. 'This is a network. Group Leads work with Door Leads. Medical works with Greeters. HSLs coordinate with Customer Care. Everyone talks to everyone through Telegram. No one is more important than anyone else. Every role serves the field.'\n\nBy Day 3, Emma understood it viscerally. She watched her Group Lead coordinate seating while Door Leads managed traffic. She saw HST members setting up Coherence Healing while Greeters helped participants find seats. Medical responded to a call while Customer Care handled a logistics question.\n\nIt was like watching a dance. Everyone knew their steps. Everyone knew when to lead and when to support. The system worked because each part knew its function and how it related to the whole.\n\nAfter the event, Emma told Kelly: 'I finally understand why you spent an hour explaining roles on Day 0. When you understand the system, you know how to serve it. When you just know your task, you're isolated. But when you see the whole... you become part of something bigger.'\n\nKelly smiled. 'Exactly. That's why we start here. With the architecture. With the whole. So every volunteer understands: you're not just doing a job. You're part of a living system designed to hold transformation.'"
+    },
+    "whyThisMatters": {
+      "content": "Dr. Joe's week-long retreats require sophisticated coordination. 1,500 people. Seven days. Dozens of meditations. Multiple support systems. Complex logistics. Medical emergencies. Emotional breakthroughs. Coherence Healings.\n\nOne person can't hold this. One hundred fifty volunteers can—if they work as a system.\n\nThe volunteer structure at these events is intentionally designed. Not random. Not improvised. Carefully architected over years of refinement.\n\n**The design principles:**\n\n**1. Clear roles with defined responsibilities**\nNo one wonders 'whose job is this?' Every function has an owner. Seating? Group Lead. Entry? Door Lead. Coherence Healing? HSL. Medical crisis? Medical Lead. This prevents gaps and overlaps.\n\n**2. Interconnection and coordination**\nRoles don't operate in silos. Group Leads work with Greeters. Door Leads coordinate with Medical. HSLs communicate with Customer Care. The system is a network, not a hierarchy.\n\n**3. Scalability through teams**\nOne Group Lead can't manage 250 people. But a Group Lead with a GLA, HST members, and Greeters can. Teams multiply capacity.\n\n**4. Communication infrastructure**\nTelegram connects everyone. All roles see what's happening. Medical posts, everyone knows. Group Lead updates, Door Team adjusts. Transparency creates coherence.\n\n**5. Support and redundancy**\nEvery critical role has backup. Group Lead has GLA. Door Lead has Door Team. Medical Lead has Med Assists. If someone needs a break, the system continues.\n\n**Why you need to understand the whole structure:**\n\n**You'll coordinate better:** When you know what Door Leads do, you can support them. When you understand HSL responsibilities, you know when to escalate to them.\n\n**You'll fill gaps:** Sometimes roles overlap. If you see something that needs doing and no one's handling it, you can step in or know who to alert.\n\n**You'll appreciate the system:** When you understand the elegance of the design, you trust it. You stop trying to improvise and start executing the plan.\n\n**You'll serve more effectively:** Knowing your role in context makes you better at it. You're not just 'doing tasks'—you're contributing to a choreographed whole.\n\nThis chapter gives you the architecture. The map. The system view.\n\nLater chapters will go deep into specific roles. But first, you need to see how it all fits together.\n\nThis is the overview. This is the foundation for everything that follows."
+    },
+    "learningObjectives": [
+      "Understand the complete volunteer structure and how roles interconnect",
+      "Learn the primary responsibilities of each Week Long role",
+      "See how roles coordinate and support each other through the event",
+      "Recognize that the system is designed, not random—every role serves the whole"
+    ]
+  },
+  "phase2_immerse": {
+    "sections": [
+      {
+        "title": "The Core Structure: Week Long Duties",
+        "content": "**Week Long Duties are the backbone roles**—volunteers who serve the same function throughout the entire retreat (Days 1-7).\n\nThese create consistency, expertise, and relationship. Participants see the same faces. Volunteers develop mastery of their role. The system becomes smooth through repetition.\n\n**The seven primary Week Long role categories:**\n\n**1. GROUP LEAD (with Group Lead Assist)**. One per color team (Red, Blue, Green, Purple, Orange, Yellow). Manages their color section—approximately 250 participants. Coordinates seating, setup, team members. First point of contact for their section's needs. Works closely with GLA who supports and assists\n\n**2. DOOR LEAD (with Door Teams)**. Manages entry and exit flow. Ensures only badged participants enter. Creates two teams: Group 1 and Group 2. Coordinates with Door Assists and Door Observers. Maintains security and sacred space boundaries\n\n**3. HEALEE SUPPORT LEAD (HSL) with HEALEE SUPPORT TEAM (HST)**. Coordinates all Coherence Healing logistics. Manages HealEE assignments and flow. Leads team of HST volunteers. Ensures CH sessions run smoothly. Works with Medical and Door teams\n\n**4. GROUP GREETER**. Assigned to color section. First warm face participants see. Helps people find seats, feel welcome. Monitors section for needs throughout event. Creates sense of belonging and community\n\n**5. MEDICAL LEAD (with Medical Assists and Caregivers)**. Oversees all medical responses. Coordinates Med Assist 1, Med Assist 2. Manages Caregivers for special needs. Makes decisions about medical interventions. Communicates through Telegram Medical/Mental thread\n\n**6. MENTAL HEALTH LEADS 1 & 2 (with Mental Health Assists)**. Licensed therapists providing psychological support. Respond to emotional crises and trauma. Coordinate with Medical when needed. Ensure participants' psychological safety. Available for consultation throughout event\n\n**7. CUSTOMER CARE TEAM (Lead, Support, App Support)**. Central problem-solving hub. Handles logistics, questions, issues. Coordinates with all other teams. App Support manages technical issues. First stop for non-medical/non-emotional needs\n\n**The design:**\n\nEach role has a lead or primary person, supported by a team. No one operates alone. Everyone has backup. The structure creates both accountability (clear ownership) and support (team around you).",
+        "pullQuote": {
+          "text": "Alone we can do so little; together we can do so much.",
+          "author": "Helen Keller"
+        }
+      },
+      {
+        "title": "Group Lead & Group Lead Assist: The Section Coordinators",
+        "content": "**Group Lead is the heartbeat of their color section.**\n\n**Primary responsibilities:**\n\n**Seating management:**. Label and organize reserved signs. Manage seating chart for their section. Handle seat assignments and changes. Ensure reserved seats are set up correctly each evening. Collect reserved signs each morning\n\n**Team coordination:**. Lead their color team (GLA, Greeters, HST members in their section). Hold daily huddles before doors open. Assign roles and responsibilities within team. Support and encourage team members\n\n**Setup and logistics:**. Ensure section is ready before doors open. Place chair bands, group signs, reserved signs. Coordinate Coherence Healing setup for their section. Manage gravity chair placement in their area\n\n**Communication:**. Primary contact for Medical, Mental Health, Customer Care about their section. Post updates in Telegram. Report issues to Event Leadership. Keep team informed of changes\n\n**Participant support:**. First response to participant needs in their section. Triage issues—handle what they can, escalate what they can't. Maintain order and flow during sessions. Create coherent, supportive energy\n\n**Group Lead Assist (GLA):**. Right hand to Group Lead. Assists with all above functions. Takes over when Group Lead needs break. Often focuses on specific tasks (seating, signs, team coordination). Provides steady support and backup\n\n**Why this role matters:**\n\n250 people in your section. Multiple needs simultaneously. Complex logistics daily. The Group Lead creates order from potential chaos. They're the conductor of their section's orchestra."
+      },
+      {
+        "title": "Door Lead & Door Teams: The Gatekeepers",
+        "content": "**Door Lead manages the sacred threshold—who enters Dr. Joe's 'Monastery.'**\n\n**Primary responsibilities:**\n\n**Security and access control:**. Check every wristband and name badge. No badge = no entry (redirect to Customer Care). Prevent unauthorized entry. Maintain event integrity and safety\n\n**Flow management:**. Coordinate entry at doors open time. Manage re-entry after breaks. Prevent congestion at entrances. Close doors at appropriate times (when Dr. Joe enters, during Pineal meditation)\n\n**Team structure:**. Create Group 1 and Group 2 door teams. Assign Door Assists (help with entry, guide to seats). Assign Door Observers (monitor re-entry during lectures). Coordinate coverage for all entrance points\n\n**Door timing protocol:**. Doors open at scheduled time. Close stage-adjacent doors when Dr. Joe comes out to dance. Close remaining doors when teaching begins. Pineal Meditation: close all but rear two doors, then seal after clear cue\n\n**Coordination with other roles:**. Work with Group Leads on seating flow. Alert Medical if someone enters appearing unwell. Communicate with Customer Care about badge issues\n\n**Door Team roles:**\n\n**Door Assist:**. Help participants find seats during morning entry. Guide badge-less people back to seats or Customer Care. Support smooth flow\n\n**Door Observer:**. Seated by assigned door during lectures. Check badges/wristbands on re-entry. Maintain security without disrupting session\n\n**Why this role matters:**\n\nThe ballroom is sacred space. What enters affects the field. Door Lead protects the container's integrity while maintaining warm welcome."
+      },
+      {
+        "title": "Healee Support Lead (HSL) & Healee Support Team (HST): The CH Coordinators",
+        "content": "**HSL coordinates all Coherence Healing logistics—one of the most complex operations of the event.**\n\n**Primary responsibilities:**\n\n**Pre-event preparation:**. Set up Telegram group for HST. Organize CH materials (blankets, papers, pens, boxes). Coordinate with Kelly on HealEE logistics. Develop CH plan with Medical team. Prepare for Registration Day CH check-in\n\n**Registration Day:**. Set up CH check-in desk. Check in HealEEs, assign door numbers and badges. Verify caregiver presence and phone numbers. Brief HealEEs on process. Handle late registrations\n\n**Managing HealEE Telegram channel:**. Post daily inspirational messages and Dr. Joe quotes. Communicate CH timing and logistics. Open and close chat at appropriate times. Send polls for attendance confirmation. Maintain coherent, supportive energy in channel\n\n**Coherence Healing setup (each session):**. Ensure CH boxes are in position. Set up HealEE holding space. Coordinate entry flow with Door Team. Manage HealER and HealEE positioning. Oversee sign-in sheets\n\n**Post-CH duties:**. Collect and organize materials. Gather blankets, count, box them. Upload sign-in sheets to Google Drive. Return materials to designated locations. Prepare for next session\n\n**Healee Support Team (HST):**. Assist with all above tasks. Provide hands-on support during setup/breakdown. Help HealEEs feel comfortable and supported. Maintain organization and order. Work as coordinated team under HSL direction\n\n**Why this role matters:**\n\nCoherence Healing involves 30-100+ HealEEs, hundreds of HealERs, specific positioning, timing, and flow. Without HSL and HST, chaos. With them, sacred order."
+      },
+      {
+        "title": "Group Greeter & Medical/Mental Health Teams",
+        "content": "**GROUP GREETER: The Welcome**\n\n**Primary responsibilities:**. First warm presence in their color section. Greet participants as they arrive each morning. Help people find seats, especially first-time attendees. Answer basic questions (bathroom location, schedule, etc.). Observe section for anyone who seems lost or needs help. Create sense of belonging and community. Support Group Lead with participant needs. Assist with evening room reset (placing signs, chairs)\n\n**Why this role matters:**\n\nYour smile, your warmth, your 'welcome home' energy sets the tone. Participants remember the Greeter who made them feel seen. This is heart-centered service.\n\n---\n\n**MEDICAL LEAD (with Med Assist 1, Med Assist 2, Caregivers):**\n\n**Primary responsibilities:**. Coordinate all medical responses throughout event. Monitor Telegram Medical/Mental thread. Dispatch medical team to emergencies. Assess situations and determine intervention level. Decide when to call 911. Manage medical equipment and supplies. Coordinate with Mental Health when situations overlap. Oversee Caregivers for participants with special needs\n\n**Medical Assists:**. Respond to medical calls with Medical Lead. Provide hands-on care (first aid, vitals, assessment). Support Medical Lead's decisions. Monitor participants post-intervention\n\n**Caregivers:**. Provide one-on-one support for participants with special needs. Assist with mobility, bathroom, medication reminders. Stay with assigned participant throughout event\n\n**Why this role matters:**\n\nPhysical safety is non-negotiable. Medical team creates the safety net that allows participants to go deep into the work without fear.\n\n---\n\n**MENTAL HEALTH LEADS 1 & 2 (with Mental Health Assists):**\n\n**Primary responsibilities:**. Respond to psychological/emotional crises. Provide trauma-informed support and grounding. Assess when someone needs intervention beyond event scope. Coordinate with Medical when physical/emotional overlap. Available for consultation throughout event. Monitor Telegram for Emotional Support requests\n\n**Mental Health Assists:**. Support leads in providing care. Help with multiple simultaneous needs. Provide presence and grounding for participants\n\n**Why this role matters:**\n\nDeep transformation can trigger intense psychological responses. Mental Health team ensures emotional safety and provides expert support when participants are overwhelmed."
+      },
+      {
+        "title": "Customer Care Team: The Problem-Solving Hub",
+        "content": "**Customer Care is central command for logistics, questions, and non-medical/emotional issues.**\n\n**The team structure:**\n\n**CC Lead:**. Oversees entire Customer Care operation. Coordinates with all other teams. Makes decisions on complex issues. Manages CC Support and App Support. First escalation point for unsolvable problems\n\n**CC Support:**. Handles participant questions and issues. Processes gravity chair requests (sends to Medical). Manages lost badges, seating concerns, general logistics. Provides information about schedule, meals, venue. Coordinates with Group Leads, Door Leads, HSL as needed\n\n**CC App Support:**. Handles technical issues with Making Your Mind Matter app. Helps participants with login, password, access. Troubleshoots app-related problems. Coordinates with tech support if needed\n\n**Primary responsibilities:**\n\n**Information hub:**. Answer questions about schedule, timing, logistics. Provide venue information (bathroom locations, meal times, etc.). Clarify policies and procedures. Direct people to appropriate resources\n\n**Problem solving:**. Handle seating issues and requests. Process accommodation requests (gravity chairs, special needs). Manage lost items, badge replacements. Resolve conflicts or complaints. Make judgment calls on grey-area situations\n\n**Coordination:**. Work with Medical on gravity chair assignments. Coordinate with Group Leads on seating issues. Alert Door Leads about badge problems. Support HSL with HealEE questions. Communicate with all teams through Telegram\n\n**Gift management:**. Process gifts for Dr. Joe (form, photo, storage). Ensure proper handling and documentation. Coordinate with Events team\n\n**Why this role matters:**\n\nEvery event has dozens of small (and some large) issues that don't fit neatly into other roles. Customer Care is the catch-all that ensures nothing falls through the cracks. They're the oil that keeps the machine running smoothly."
+      },
+      {
+        "title": "How Roles Interconnect: The Living System",
+        "content": "**The magic isn't in individual roles—it's in how they work together.**\n\n**Example scenarios showing interconnection:**\n\n**Scenario 1: Medical emergency during meditation**. Greeter notices participant looking pale. Greeter signals Group Lead. Group Lead posts in Telegram: Medical needed. Medical Lead dispatches team to location. Door Observer ensures clear path for Medical to enter. HST member (if nearby) helps clear space around participant. Customer Care coordinates follow-up (participant's belongings, communication with family, etc.). Everyone worked together, each doing their part\n\n**Scenario 2: Coherence Healing setup**. HSL coordinates overall CH plan. Group Leads prepare their sections for HealER seating. Door Lead coordinates HealEE entry flow. Greeters help HealERs find their positions. HST manages materials and setup. Medical ensures HealEEs with special needs are positioned safely. Customer Care handles any last-minute HealEE questions. System coordinates seamlessly\n\n**Scenario 3: Lost participant trying to find seat**. Participant approaches Door Observer: 'I can't find my seat'. Door Observer: 'Let me help. Which color team are you?'. If participant knows: Door Observer signals that color's Greeter. If participant doesn't know: Door Observer walks them to Customer Care. Customer Care looks up their assignment, contacts Group Lead. Group Lead or Greeter escorts participant to correct seat. Multiple roles, smooth handoff\n\n**The coordination mechanisms:**\n\n**Telegram:**. All roles monitor main Team Chat. Medical/Mental thread for support requests. Role-specific threads for coordination. Real-time updates visible to everyone\n\n**Pre-shift huddles:**. Group Leads with their teams. Door Lead with Door Teams. HSL with HST. Alignment before doors open\n\n**Cross-role communication:**. Group Leads talk to Door Leads about flow. Medical coordinates with HSL for CH needs. Customer Care updates Group Leads on seating changes. Continuous coordination throughout day\n\n**The principle:**\n\nNo role operates in isolation. Your success depends on others. Their success depends on you. The system works when everyone understands their part AND how it fits into the whole.\n\nThis is the architecture. This is the design.\n\nYou're not just a volunteer. You're a node in a living network designed to hold transformation for 1,500 people.\n\nUnderstand the whole. Trust the system. Execute your part with excellence.\n\nThat's how the magic happens."
+      }
+    ],
+    "reflection": {
+      "title": "Your Essential Part",
+      "content": "You might look at all these roles and wonder: Why so much structure? Why so many specific positions?\n\nHere's why: because transformation requires a container. And a container requires everyone doing their part.\n\nEvery role matters. Not because of hierarchy. Because of function.\n\nThe Greeter creates the first moment of welcome. The Door Team protects the sacred space. The Seating Coordinator ensures everyone has a place. The HSL holds the vision. The HST makes it real.\n\nRemove any one of these, and the container weakens. Keep them all strong, and transformation becomes possible.\n\nYou're learning where you fit in this architecture. What your role does. Why it matters. How it serves.\n\nThis is profound practice.\n\nBecause most of us have been taught that some work is important and some work is just support. That leadership matters more than logistics. That visible roles are more valuable than invisible ones.\n\nBut you're learning something different: every role is essential. Every task serves. Every person matters.\n\nThe volunteer checking badges at the door is doing sacred work. They're protecting the container. They're ensuring only people who are supposed to be here are here. They're creating safety.\n\nThe volunteer managing materials is doing sacred work. They're ensuring the tools of transformation are available when needed. They're removing obstacles. They're creating flow.\n\nThe volunteer coordinating seating is doing sacred work. They're ensuring everyone has a place. They're managing the energy of the room. They're creating order from chaos.\n\nThere are no small roles. Only essential ones.\n\nAnd here's what happens when you truly understand this:\n\nYou stop comparing. You stop wishing you had a different role. You stop thinking \"I'm just\" doing anything.\n\nYou recognize: I'm doing exactly what's needed. My role serves. My presence matters.\n\nThis changes how you show up. Not resentful that you're not leading. Not diminished because your role isn't visible. Grounded in knowing: I'm essential to this container.\n\nYou're also learning how roles work together. How HSL and HST partner. How Door and Greeter coordinate. How everyone supports everyone else.\n\nThis is what coherence looks like in action. Not everyone doing the same thing. Everyone doing their thing in harmony.\n\nYour role isn't isolated. It's interconnected. What you do affects what others can do. How you show up affects how others can show up.\n\nWhen you're clear and grounded in your role, you make everyone else's role easier. When you're confused or scattered, you create ripples of confusion.\n\nThis is why understanding your role matters. Not just what to do. Why it matters. How it serves. How it connects.\n\nYou're becoming someone who can hold their part of the container with integrity. Who doesn't need recognition to know they're valuable. Who serves because the work itself is meaningful.\n\nThat's the practice. That's the evolution. That's what it means to be part of something larger than yourself."
+    }
+  },
+  "phase3_integrate": {
+    "quiz": [
+      {
+        "question": "You're a Group Greeter in the Blue section. A participant approaches you saying they can't find their assigned seat and seem frustrated. What's your best response?",
+        "options": [
+          {
+            "text": "Help them look for their seat in the Blue section. If you can't find it quickly, signal your Group Lead who has the seating chart and can locate it or determine if they're in the wrong section.",
+            "isCorrect": true,
+            "feedback": "Perfect. You're using your role (first-line support, welcoming presence) and escalating to the right person (Group Lead has the seating information). You tried to solve it yourself first, but you know when to bring in someone with more information. This is effective coordination within your team."
+          },
+          {
+            "text": "Immediately walk them to Customer Care—they handle all seating issues and will be able to look up their assignment",
+            "isCorrect": false,
+            "feedback": "This over-escalates. The issue is likely solvable within your section—they may just be looking in the wrong row. Try to help first, use your Group Lead second, and only involve Customer Care if it's truly outside your section's scope (like they're assigned to wrong color entirely). Use the closest resource first."
+          },
+          {
+            "text": "Since you're just a Greeter and don't have seating authority, politely explain you can't help with seating and suggest they find someone else",
+            "isCorrect": false,
+            "feedback": "Greeters absolutely help people find seats—that's a core function of your role. Don't deflect basic help. Your job is to assist, and when you can't solve it alone, you escalate to Group Lead. Never leave a frustrated participant to 'find someone else.' You're the someone else."
+          },
+          {
+            "text": "Tell them to just sit in any empty seat in your section—it'll be easier than trying to track down their specific assignment",
+            "isCorrect": false,
+            "feedback": "Never override the seating system. Assigned seats exist for reasons (team cohesion, special accommodations, logistics). Making ad-hoc decisions about seating creates chaos for your Group Lead and potentially puts someone in a seat needed for someone else. Always work within the system, never around it."
+          }
+        ]
+      },
+      {
+        "question": "You're working Registration Day as part of the Door Team. You notice someone trying to enter the ballroom without a visible wristband or name badge. What do you do?",
+        "options": [
+          {
+            "text": "Politely stop them and ask to see their wristband or name badge. If they don't have one, direct them to Customer Care to get a replacement. Don't allow entry without proper identification.",
+            "isCorrect": true,
+            "feedback": "Exactly right. Door Team's core function is access control. You're being polite but firm. Customer Care handles badge issues—that's the correct escalation path. You're protecting the integrity of the event while directing them to the solution. This is skilled boundary-holding."
+          },
+          {
+            "text": "Let them in this one time but mention they should get a badge—it's Registration Day and things are chaotic, so some flexibility is needed",
+            "isCorrect": false,
+            "feedback": "Never compromise on access control. The person might not be registered, might be trying to enter without paying, or might be a security concern. 'This one time' becomes 'all the time' and the system breaks down. Badge/wristband = entry. No exceptions. Direct them to Customer Care for resolution."
+          },
+          {
+            "text": "Signal your Door Lead to handle it—making entry decisions is above your authority level as a Door Team member",
+            "isCorrect": false,
+            "feedback": "This is exactly within your authority. Door Team members check badges—that's the role. You don't need Door Lead for straightforward access control. If they argue or create a scene, then escalate to Door Lead. But 'no badge = redirect to Customer Care' is yours to handle. Trust your role."
+          },
+          {
+            "text": "Ask them if they're a volunteer—if yes, let them in since volunteers don't always have visible credentials",
+            "isCorrect": false,
+            "feedback": "All volunteers should have lanyards that identify them. If they claim to be a volunteer but have no identification, they still need to verify with Customer Care. Don't make assumptions or exceptions. The protocol exists for everyone's safety. Verify credentials, always."
+          }
+        ]
+      },
+      {
+        "question": "You're an HST member. During Coherence Healing setup, you notice your HSL is overwhelmed—trying to manage HealEE entry, coordinate with Door Lead, and organize materials simultaneously. What's your best response?",
+        "options": [
+          {
+            "text": "Ask 'What can I take off your plate right now?' and offer to handle one specific task like managing materials or coordinating with Door Lead—whatever they need most.",
+            "isCorrect": true,
+            "feedback": "Beautiful. You're recognizing overwhelm, offering specific help, and letting them delegate what's most useful. HST exists to support HSL. You're not taking over, you're lightening load. This is exactly what team support looks like. You're allowing HSL to maintain leadership while reducing their burden."
+          },
+          {
+            "text": "Take over the HealEE entry coordination without asking—your HSL clearly needs you to step up and lead in this moment",
+            "isCorrect": false,
+            "feedback": "Don't take over leadership without communication. HSL may have specific reasons for how they're managing things. Stepping in without asking creates confusion about who's leading. Offer help, let them delegate, but don't usurp their role. Support, don't override."
+          },
+          {
+            "text": "Alert Customer Care that your HSL seems overwhelmed and might need additional support or a break",
+            "isCorrect": false,
+            "feedback": "This escalates unnecessarily and potentially undermines your HSL. They're not in crisis—they're busy. Your role as HST is to support them directly, not to report them to other teams. If they truly need a break, they'll communicate that. Offer help first, escalate only if they're actually unable to continue."
+          },
+          {
+            "text": "Do your assigned task efficiently and wait for further instructions—your HSL knows what they're doing and will ask if they need help",
+            "isCorrect": false,
+            "feedback": "This is too passive when you can see someone struggling. Good team members recognize when proactive help is needed. 'I'm here if you need me' is better than waiting to be asked. HST role is active support, not passive task completion. Offer assistance when you see the need."
+          }
+        ]
+      },
+      {
+        "question": "You're a Group Lead and you receive a Telegram post from Medical saying they're responding to someone in your section. You don't see where the Medical team is. What should you do?",
+        "options": [
+          {
+            "text": "Check the Telegram post for location details, then move to that area to ensure Medical can access the participant easily. Clear space if needed and be available to provide information if Medical asks.",
+            "isCorrect": true,
+            "feedback": "Perfect coordination. You're using the information provided, positioning yourself to assist, and staying available without interfering. You're supporting Medical's work while maintaining awareness of your section. This is exactly how Group Lead and Medical work together effectively."
+          },
+          {
+            "text": "Immediately approach the Medical team to brief them on your section and offer to show them where everyone sits",
+            "isCorrect": false,
+            "feedback": "Medical already has location from the Telegram post. Don't interrupt them as they're responding—they know where they're going. Position yourself nearby to help if needed, but let them work. Your briefing, while well-intentioned, could delay their response. Be available, don't insert yourself."
+          },
+          {
+            "text": "Post in Telegram asking Medical which participant they're helping so you can provide their information",
+            "isCorrect": false,
+            "feedback": "This clogs the Telegram channel unnecessarily. Medical has what they need from the original post. If they need additional information from you, they'll ask. Don't create extra communication when they're responding to a situation. Trust they have what they need, be present in case they need more."
+          },
+          {
+            "text": "Continue with your other duties—Medical has the situation and doesn't need Group Lead involvement",
+            "isCorrect": false,
+            "feedback": "Too hands-off. While Medical leads medical situations, Group Lead should be aware of what's happening in their section. You don't need to be directly involved, but you should know what's occurring and be positioned to assist if needed. Awareness and availability matter."
+          }
+        ]
+      }
+    ],
+    "reflection": {
+      "title": "The Architecture of Sacred Service",
+      "content": "You might look at all these roles—HSL, HST, Greeter, Door, Seating—and think: *Why so many positions? Why so much structure?*\n\nHere's why:\n\n**Because transformation requires a container. And a container requires architecture.**\n\nEvery role is a load-bearing wall in that structure. Remove one, and the whole thing becomes unstable.\n\nThe Greeter isn't just saying hello. They're creating the first moment of welcome that sets the tone for everything that follows.\n\nThe Door Team isn't just checking badges. They're protecting the sanctity of the space so participants can surrender fully.\n\nThe HSL isn't just coordinating logistics. They're holding the nervous system of the entire section steady.\n\nSeating isn't just managing chairs. They're ensuring every person lands in the right place at the right time.\n\n**Each role serves the whole. Each person holds one piece of a larger sacred geometry.**\n\nAnd here's what's beautiful:\n\n**You don't have to do everything to be essential.**\n\nYou just have to do your one thing with full presence. With care. With commitment.\n\nWhen you show up for your role—whatever it is—you're not just completing tasks. You're holding space. You're part of the architecture that makes transformation possible.\n\nThe participant who has a breakthrough during meditation? They'll never know your name. They won't know you were the one who greeted them warmly, or checked their badge with kindness, or ensured their seat was ready.\n\nBut you were part of it. Your presence mattered. Your role made it possible.\n\n**That's the sacred work. Not the glory. The service.**\n\nEvery role matters. Every person counts. Every act of care contributes to the whole.\n\nThat's why we have structure. That's why each role is defined. That's why you're being trained.\n\nBecause transformation doesn't happen in chaos. It happens in a container held steady by people who care enough to show up fully for their one piece of the whole."
+    }
+  },
+  "phase4_anchor": {
+    "summary": {
+      "keyPoints": [
+        "Seven core Week Long roles: Group Lead, Door Lead, HSL, Greeters, Medical, Mental Health, Customer Care",
+        "Each role has clear responsibilities and a support team—no one operates alone",
+        "Roles interconnect through Telegram, coordination, and cross-team communication",
+        "Group Leads coordinate sections, Door Leads manage access, HSL handles CH logistics",
+        "Medical/Mental Health provide safety nets, Customer Care solves problems, Greeters create welcome",
+        "The system works when each role understands its function AND how it relates to others",
+        "You're not just doing tasks—you're part of an architected system designed to hold transformation"
+      ],
+      "integration": "You now see the architecture. The elegant design that makes 1,500-person events work.\n\nEvery role essential. Every role interconnected. No hierarchy—just clear function.\n\nThis isn't bureaucracy. This is choreography. This is 150 people moving as one coordinated system to hold space for transformation.\n\nYou understand the whole. Now you're ready to learn your specific role in depth.\n\nNext chapters will dive into the detailed protocols for each position. But you needed this foundation first—the map that shows you where your role fits in the living system.\n\nYou're not isolated. You're connected. Part of something larger. Essential to the whole.\n\nModule 3, Chapter 1 complete. The overview established."
+    },
+    "closingQuote": {
+      "text": "When we understand our role in the whole, we can show up with clarity and purpose.",
+      "author": "Dr. Joe Dispenza"
+    },
+    "nextChapter": {
+      "title": "Registration Day Roles",
+      "preview": "Understanding the specific roles and responsibilities for Day 1—when the container is built and first impressions are made"
+    }
+  }
+}
