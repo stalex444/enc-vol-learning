@@ -102,6 +102,20 @@
       ]
     },
     {
+      "id": "conclusion",
+      "title": "Conclusion: You Are Ready",
+      "description": "Completion ceremony and graduation from the training",
+      "estimatedTime": "5 min",
+      "color": "from-amber-400 to-amber-600",
+      "chapters": [
+        {
+          "id": "01",
+          "title": "You Are Ready",
+          "estimatedTime": "5 min"
+        }
+      ]
+    },
+    {
       "id": "appendix",
       "title": "Appendix: Quick Reference Materials",
       "description": "Essential cheat sheets and protocols for quick reference during events",

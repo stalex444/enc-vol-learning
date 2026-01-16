@@ -1,0 +1,15 @@
+{
+  "id": "conclusion",
+  "title": "Conclusion: You Are Ready",
+  "description": "Completion ceremony and graduation from the training",
+  "icon": "🦋",
+  "color": "sacred-gold",
+  
+  "chapters": [
+    {
+      "id": "01",
+      "title": "You Are Ready",
+      "description": "The completion ceremony - honoring your transformation"
+    }
+  ]
+}
